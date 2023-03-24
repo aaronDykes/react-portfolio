@@ -47,12 +47,11 @@ function printRect (height) {
   if (height <= 0 || isNaN(height)) return
 
   let top = '*'
-  let result = ''
 
   for (let i = 0; i < height - 2; i++) top += '  *'
 
   top += '  *\n'
-  result += top
+  let result = top
 
   for (let i = 0; i < height - 2; i++) result += top
 
