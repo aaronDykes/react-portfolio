@@ -1,0 +1,79 @@
+.header {
+  display: grid;
+  height: 30vh;
+  grid:
+    "head head head head"
+    "head head head head"
+    "head head head head";
+  grid-gap: 1rem;
+  background-color: #ebf2ff;
+}
+
+.leftHeader {
+  grid-area: 2 / 1;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 2rem;
+  z-index: 1;
+}
+
+.dropdown-content Link {
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+#dropBtn {
+  padding: 1rem;
+  background-color: #ebf2ff;
+  border-color: #ebf2ff;
+  color: rgb(184, 95, 36);
+  border-radius: 0.8rem;
+  font-size: 5rem;
+}
+
+#dropBtn:hover {
+  padding: 1rem;
+  background-color: #ebf2ff;
+  border-color: #ebf2ff;
+  color: rgb(126, 61, 18);
+  text-decoration: underline;
+}
+
+#navList {
+  list-style-type: none;
+}
+#navList a,
+#navList:active a {
+  text-decoration: none;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+  padding: 0.3rem;
+  color: black;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+}
+#navList a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: rgb(184, 95, 36);
+}
+#navList li {
+  margin-bottom: 0.9rem;
+}
+
+#rightNav {
+  text-align: right;
+}

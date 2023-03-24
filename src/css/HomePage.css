@@ -1,0 +1,58 @@
+.name {
+  height: 120vh;
+  display: grid;
+  text-align: center;
+  font-size: 4rem;
+  grid:
+    'name name name'
+    'name name name'
+    'name name name'
+    'name name name'
+    'name name name'
+    'name name name'
+    'name name name'
+    'name name name';
+}
+
+.firstName {
+  font-size: 6rem;
+  grid-area: 4 / 2;
+  margin-bottom: -3rem;
+  animation: slideInRight 2s ease-out;
+}
+
+.lastName {
+  font-size: 6rem;
+  grid-area: 5 / 2;
+  animation: slideInLeft 2s ease-out;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-6rem);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(6rem);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
