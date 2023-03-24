@@ -7,6 +7,7 @@ import '../css/Pattern.css'
 function printTriangle (height) {
   if (height >= 12) height = 12
   if (height <= 0 || isNaN(height)) return
+
   let result = '*\n'
   let ast = '*'
 
@@ -14,6 +15,7 @@ function printTriangle (height) {
     ast += ' *'
     result += ast + '\n'
   }
+
   const newText = result.split('\n').map(str => <p>{str}</p>)
   return <div>{newText}</div>
 }
@@ -46,24 +48,16 @@ function printRect (height) {
 
   let top = '*'
   let result = ''
-  let sides = '*'
 
-  for (let i = 0; i < height - 2; i++) {
-    top += '  *'
-    sides += '  *'
-  }
-  sides += '  *\n'
+  for (let i = 0; i < height - 2; i++) top += '  *'
+
   top += '  *\n'
   result += top
 
-  for (let i = 0; i < height - 2; i++) {
-    result += sides
-  }
+  for (let i = 0; i < height - 2; i++) result += top
 
   result += top
-
   const final = result.split('\n').map(str => <p>{str}</p>)
-
   return <div>{final}</div>
 }
 
