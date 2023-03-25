@@ -1,6 +1,6 @@
 .Footer {
   display: grid;
-  height: 40vh;
+  height: 50vh;
   background-color: #7291c9;
   grid:
     'footer footer footer footer'
@@ -41,12 +41,12 @@
 .LeftStudent {
   margin-left: 2rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgb(242, 238, 234);
 }
 .RightStudent {
   margin-right: 2rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgb(242, 238, 234);
 }

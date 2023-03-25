@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  height: 40vh;
+  height: 50vh;
   grid:
     'head head head head'
     'head head head head'
