@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4",
     "zustand": "^4.3.6"
   },
-  "homepage": "https://aarondykes.github.io/react-portfolio/",
+  "homepage": ".",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
