@@ -22,6 +22,7 @@ function RightDescription () {
           <a
             href='https://github.com/aaronDykes/react-portfolio'
             target='_blank'
+            rel='noreferrer'
           >
             Code
           </a>
@@ -31,8 +32,9 @@ function RightDescription () {
         <dd className='RightData'>
           <a
             href='
-          https://www.linkedin.com/in/aaron-dykes-691524216/'
+            https://www.linkedin.com/in/aaron-dykes-691524216/'
             target='_blank'
+            rel='noreferrer'
           >
             LinkedIn
           </a>
