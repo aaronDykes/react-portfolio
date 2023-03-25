@@ -6,8 +6,8 @@
 
   gap: 1rem;
   display: grid;
-  margin: 2rem;
   height: 120vh;
+  background-color: rgb(233, 228, 222);
 }
 input {
   font-size: 1.5rem;
@@ -21,6 +21,7 @@ div .Pat {
 
 .Triangle {
   text-align: left;
+  margin-left: 2rem;
   grid-area: 2 / 1;
 }
 .Triangle h2 {
@@ -37,6 +38,7 @@ div .Pat {
   color: rgb(0, 84, 148);
 }
 .Rectangle {
+  margin-right: 2rem;
   text-align: right;
   grid-area: 2 / 3;
 }
