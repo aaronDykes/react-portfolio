@@ -1,6 +1,6 @@
 .Footer {
   display: grid;
-  height: 50vh;
+  height: 40vh;
   background-color: #7291c9;
   grid:
     'footer footer footer footer'

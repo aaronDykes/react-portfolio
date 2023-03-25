@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  height: 50vh;
+  height: 40vh;
   grid:
     'head head head head'
     'head head head head'
@@ -38,7 +38,6 @@
 
 #dropBtn {
   padding: 1rem;
-
   background-color: #7291c9;
   border-color: #7291c9;
   color: rgb(233, 229, 225);
