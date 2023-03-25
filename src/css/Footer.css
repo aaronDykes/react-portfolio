@@ -1,7 +1,7 @@
 .Footer {
   display: grid;
-  height: 40vh;
-  background-color: #ebf2ff;
+  height: 50vh;
+  background-color: #7291c9;
   grid:
     'footer footer footer footer'
     'footer footer footer footer'
@@ -9,12 +9,22 @@
     'footer footer footer footer';
 }
 
-dt {
-  font-weight: bold;
-}
-dd {
+.LeftData {
   margin-top: 0.5rem;
   margin-left: 1rem;
+  color: rgb(93, 42, 3);
+}
+.RightData {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+.RightData a {
+  text-decoration: none;
+  color: rgb(15, 51, 133);
+}
+.RightData a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .LeftContact {
@@ -22,6 +32,21 @@ dd {
   text-align: left;
   margin: 1rem;
 }
-.Student {
+.RightContact {
+  grid-area: 3 / 4;
+  text-align: right;
+  margin: 1rem;
+}
+
+.LeftStudent {
+  margin-left: 2rem;
+  font-weight: bold;
   font-size: 1.5rem;
+  color: rgb(242, 238, 234);
+}
+.RightStudent {
+  margin-right: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(242, 238, 234);
 }

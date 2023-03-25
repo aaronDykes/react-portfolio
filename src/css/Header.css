@@ -1,12 +1,12 @@
 .header {
   display: grid;
-  height: 30vh;
+  height: 50vh;
   grid:
-    'head head head head'
-    'head head head head'
-    'head head head head';
+    "head head head head"
+    "head head head head"
+    "head head head head";
   grid-gap: 1rem;
-  background-color: #ebf2ff;
+  background-color: #7291c9;
 }
 
 .leftHeader {
@@ -16,6 +16,7 @@
 }
 
 .dropdown {
+  grid-area: 2 / 1;
   position: absolute;
   display: inline-block;
 }
@@ -37,42 +38,57 @@
 
 #dropBtn {
   padding: 1rem;
-  background-color: #ebf2ff;
-  border-color: #ebf2ff;
-  color: rgb(184, 95, 36);
+
+  background-color: #7291c9;
+  border-color: #7291c9;
+  color: rgb(233, 229, 225);
   border-radius: 0.8rem;
   font-size: 5rem;
+  font-size: 6rem;
+  font-weight: bolder;
+  letter-spacing: 0.7rem;
   margin-left: 2rem;
 }
 
 #dropBtn:hover {
   padding: 1rem;
-  background-color: #ebf2ff;
-  border-color: #ebf2ff;
-  color: rgb(126, 61, 18);
+  background-color: #7291c9;
+  border-color: #7291c9;
+
+  color: rgb(254, 254, 254);
   text-decoration: underline;
 }
 
 #navList {
   list-style-type: none;
 }
+
 #navList a,
 #navList:active a {
-  text-decoration: none;
   background-color: #d9d9d9;
   border-color: #d9d9d9;
-  padding: 0.3rem;
-  color: black;
-  border-radius: 0.2rem;
-  font-size: 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  color: rgb(47, 11, 92);
+  box-shadow: 0.2rem 0.5rem 1rem rgb(0, 0, 0, 0.1);
 }
 #navList a:hover {
-  text-decoration: underline;
   color: white;
+  box-sizing: content-box;
+  text-decoration: underline;
   background-color: rgb(184, 95, 36);
+  box-shadow: 0.2rem 0.8rem 1.5rem rgb(0, 0, 0, 0.05);
 }
 #navList li {
-  margin-bottom: 0.9rem;
+  margin-bottom: 2rem;
+}
+#navList li:active {
+  transform: translateY(-0.1rem);
+}
+#navList li:hover {
+  transform: translateY(-0.3rem);
 }
 
 #rightNav {

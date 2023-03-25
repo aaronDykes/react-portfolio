@@ -1,8 +1,11 @@
 .name {
-  height: 120vh;
+  height: 100vh;
   display: grid;
   text-align: center;
   font-size: 4rem;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+  background-color: rgb(230, 222, 213);
   grid:
     'name name name'
     'name name name'

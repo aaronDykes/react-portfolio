@@ -6,12 +6,16 @@
 
   gap: 1rem;
   display: grid;
-  margin: 4rem;
-  height: 90vh;
+  height: 150vh;
+  background-color: rgb(233, 228, 222);
 }
 input {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: inherit;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  background-color: rgb(234, 238, 241);
+  border-style: none;
 }
 div .Pat {
   margin-top: 2rem;
@@ -21,10 +25,11 @@ div .Pat {
 
 .Triangle {
   text-align: left;
+  margin-left: 2rem;
   grid-area: 2 / 1;
 }
 .Triangle h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: rgb(0, 84, 148);
 }
 
@@ -33,14 +38,15 @@ div .Pat {
   grid-area: 2 / 2;
 }
 .Diamond h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: rgb(0, 84, 148);
 }
 .Rectangle {
+  margin-right: 2rem;
   text-align: right;
   grid-area: 2 / 3;
 }
 .Rectangle h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: rgb(0, 84, 148);
 }
