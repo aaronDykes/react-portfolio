@@ -1,6 +1,6 @@
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import { useState } from 'react'
+import HeightStore from '../stores/HeightStore'
 
 import '../css/Pattern.css'
 
@@ -79,11 +79,36 @@ function printRect (height) {
 //   const final = mid.split('\n').map(str => <p>{str} </p>)
 // }
 
-function Triangle () {
-  const [triangleHeight, setTriangleHeight] = useState('')
-  const handleTriChange = e => {
-    setTriangleHeight(e.target.value)
+function getStore (str) {
+  switch (str) {
+    case 'rect':
+      return HeightStore(s => {
+        return {
+          rectHeight: s.rectHeight,
+          setRectHeight: s.setRectHeight
+        }
+      })
+    case 'tri':
+      return HeightStore(s => {
+        return {
+          triHeight: s.triHeight,
+          setTriHeight: s.setTriHeight
+        }
+      })
+    case 'di':
+      return HeightStore(s => {
+        return {
+          diHeight: s.diHeight,
+          setDiHeight: s.setDiHeight
+        }
+      })
+    default:
+      return
   }
+}
+
+function Triangle () {
+  const store = getStore('tri')
   return (
     <div className='Triangle'>
       <div>
@@ -91,24 +116,21 @@ function Triangle () {
         <br />
         <input
           className='Inp'
-          name='triangleheight'
-          onChange={handleTriChange}
-          value={triangleHeight}
+          name='height'
+          onChange={store.setTriHeight}
+          value={store.triHeight}
           placeholder='Enter an integer'
         />
       </div>
       <div className='Pat'>
-        {triangleHeight && printTriangle(triangleHeight)}
+        {store.triHeight && printTriangle(store.triHeight)}
       </div>
     </div>
   )
 }
 
 function Rectangle () {
-  const [rectHeight, setRectHeight] = useState('')
-  const handleRectChange = e => {
-    setRectHeight(e.target.value)
-  }
+  const store = getStore('rect')
   return (
     <div className='Rectangle'>
       <div>
@@ -117,51 +139,49 @@ function Rectangle () {
         <input
           className='Inp'
           name='rectHeight'
-          onChange={handleRectChange}
-          value={rectHeight}
+          onChange={store.setRectHeight}
+          value={store.rectHeight}
           placeholder='Enter an integer'
         />
       </div>
-      <div className='Pat'>{rectHeight && printRect(rectHeight)}</div>
+      <div className='Pat'>
+        {store.rectHeight && printRect(store.rectHeight)}
+      </div>
     </div>
   )
 }
 
 function Diamond () {
-  const [diHeight, setDiHeight] = useState('')
-  const handleDiChange = e => {
-    setDiHeight(e.target.value)
-  }
+  const store = getStore('di')
   return (
     <div className='Diamond'>
       <div>
         <h2>Print a Diamond</h2>
         <br />
-
         <input
           className='Inp'
           name='diHeight'
-          onChange={handleDiChange}
-          value={diHeight}
+          onChange={store.setDiHeight}
+          value={store.diHeight}
           placeholder='Enter an integer'
         />
       </div>
-      <div className='Pat'>{diHeight && printDiamond(diHeight)}</div>
+      <div className='Pat'>
+        {store.diHeight && printDiamond(store.diHeight)}
+      </div>
     </div>
   )
 }
 
 export default function Pattern () {
   return (
-    <div>
+    <div className='Pattern-Container'>
       <Header />
       <div className='Pattern'>
         <Triangle />
         <Rectangle />
         <Diamond />
       </div>
-
-      {/* <div className='Fib'></div>*/}
       <Footer />
     </div>
   )
