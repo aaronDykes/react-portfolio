@@ -2,9 +2,9 @@
   display: grid;
   height: 50vh;
   grid:
-    "head head head head"
-    "head head head head"
-    "head head head head";
+    'head head head head'
+    'head head head head'
+    'head head head head';
   grid-gap: 1rem;
   background-color: #7291c9;
 }
@@ -43,7 +43,6 @@
   border-color: #7291c9;
   color: rgb(233, 229, 225);
   border-radius: 0.8rem;
-  font-size: 5rem;
   font-size: 6rem;
   font-weight: bolder;
   letter-spacing: 0.7rem;
