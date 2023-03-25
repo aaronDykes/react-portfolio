@@ -3,6 +3,8 @@
   display: grid;
   text-align: center;
   font-size: 4rem;
+  font-weight: bold;
+  color: rgb(15, 100, 169);
   grid:
     'name name name'
     'name name name'
