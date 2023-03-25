@@ -6,7 +6,7 @@
     'head head head head'
     'head head head head';
   grid-gap: 1rem;
-  background-color: #ebf2ff;
+  background-color: #7291c9;
 }
 
 .leftHeader {
@@ -38,11 +38,12 @@
 
 #dropBtn {
   padding: 1rem;
-  background-color: #ebf2ff;
-  border-color: #ebf2ff;
-  color: rgb(184, 95, 36);
+
+  background-color: #7291c9;
+  border-color: #7291c9;
+  color: rgb(233, 229, 225);
   border-radius: 0.8rem;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bolder;
   letter-spacing: 0.7rem;
   margin-left: 2rem;
@@ -50,9 +51,10 @@
 
 #dropBtn:hover {
   padding: 1rem;
-  background-color: #ebf2ff;
-  border-color: #ebf2ff;
-  color: rgb(126, 61, 18);
+  background-color: #7291c9;
+  border-color: #7291c9;
+
+  color: rgb(254, 254, 254);
   text-decoration: underline;
 }
 
