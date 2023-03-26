@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.3e7a5579.css",
-    "main.js": "/react-portfolio/static/js/main.820bb5ba.js",
+    "main.css": "/react-portfolio/static/css/main.99066b45.css",
+    "main.js": "/react-portfolio/static/js/main.10f48d5c.js",
+    "static/media/Tree.png": "/react-portfolio/static/media/Tree.06cde1b73282ccf6071f.png",
+    "static/media/Bluffs.png": "/react-portfolio/static/media/Bluffs.f5eb379bba69af41d1f5.png",
+    "static/media/SanSky.png": "/react-portfolio/static/media/SanSky.c9a33f2aaa990b160078.png",
+    "static/media/SanSun.png": "/react-portfolio/static/media/SanSun.cbe4e01b423f0833af66.png",
+    "static/media/Ocean.png": "/react-portfolio/static/media/Ocean.f48a7678a14ec28915bb.png",
+    "static/media/SanFran.png": "/react-portfolio/static/media/SanFran.afd516c77597863bb751.png",
+    "static/media/Alcatraz.png": "/react-portfolio/static/media/Alcatraz.8a764c21e0e7c046af22.png",
     "index.html": "/react-portfolio/index.html",
-    "main.3e7a5579.css.map": "/react-portfolio/static/css/main.3e7a5579.css.map",
-    "main.820bb5ba.js.map": "/react-portfolio/static/js/main.820bb5ba.js.map"
+    "main.99066b45.css.map": "/react-portfolio/static/css/main.99066b45.css.map",
+    "main.10f48d5c.js.map": "/react-portfolio/static/js/main.10f48d5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e7a5579.css",
-    "static/js/main.820bb5ba.js"
+    "static/css/main.99066b45.css",
+    "static/js/main.10f48d5c.js"
   ]
 }
