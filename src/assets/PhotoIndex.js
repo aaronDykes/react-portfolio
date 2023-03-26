@@ -5,5 +5,6 @@ import SanFran from './SanFran.png'
 import SanSun from './SanSun.png'
 import Tor from './Ocean.png'
 import Bluffs from './Bluffs.png'
+import Ontario from './Ontario.png'
 
-export { Red, Alc, SanSky, SanFran, SanSun, Tor, Bluffs }
+export { Red, Alc, SanSky, SanFran, SanSun, Tor, Bluffs, Ontario }
