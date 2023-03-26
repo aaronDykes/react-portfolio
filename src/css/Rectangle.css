@@ -1,0 +1,8 @@
+.Rectangle {
+  margin-right: 2rem;
+  text-align: right;
+}
+.Rectangle h2 {
+  font-size: 3rem;
+  color: rgb(0, 84, 148);
+}

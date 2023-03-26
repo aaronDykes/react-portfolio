@@ -20,33 +20,16 @@ input {
 div .Pat {
   margin-top: 2rem;
   font-size: 1rem;
-  color: rgb(179, 72, 1);
+  font-weight: bold;
+  color: rgb(142, 58, 2);
 }
 
 .Triangle {
-  text-align: left;
-  margin-left: 2rem;
   grid-area: 2 / 1;
 }
-.Triangle h2 {
-  font-size: 3rem;
-  color: rgb(0, 84, 148);
-}
-
 .Diamond {
-  text-align: center;
   grid-area: 2 / 2;
 }
-.Diamond h2 {
-  font-size: 3rem;
-  color: rgb(0, 84, 148);
-}
 .Rectangle {
-  margin-right: 2rem;
-  text-align: right;
   grid-area: 2 / 3;
-}
-.Rectangle h2 {
-  font-size: 3rem;
-  color: rgb(0, 84, 148);
 }
