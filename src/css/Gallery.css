@@ -1,0 +1,85 @@
+.Gallery {
+  height: 120vh;
+  grid:
+    'img img img'
+    'img img img'
+    'img img img';
+  display: grid;
+  background-image: linear-gradient(
+      to top left,
+      rgba(37, 140, 214, 0.7),
+      rgba(13, 44, 67, 0.7)
+    ),
+    url('../assets/SanSky.png');
+  background-size: cover;
+  background-position: top;
+}
+#Head,
+#Head a,
+#Head a:active {
+  text-decoration: none;
+  color: rgb(233, 229, 225);
+  font-weight: bold;
+  padding: 1rem;
+  margin-left: 2rem;
+  font-size: 6rem;
+  font-weight: bolder;
+  letter-spacing: 0.7rem;
+}
+
+#Head:hover {
+  color: rgb(254, 254, 254);
+  text-decoration: underline;
+}
+.Image {
+  margin-top: 6rem;
+}
+
+.Content {
+  grid-area: 2 / 1 / span 1 / span 3;
+  grid:
+    'img img img'
+    'img img img'
+    'img img img';
+  display: grid;
+  position: relative;
+  height: fit-content;
+  margin: 2rem;
+}
+.Redwood {
+  text-align: center;
+}
+#Red {
+  height: 30rem;
+  width: 30rem;
+  border-style: solid;
+  border-image: auto;
+  border-width: 1rem;
+  border-radius: 0.2rem;
+  border-color: white;
+}
+
+.Alcatraz {
+  text-align: left;
+}
+#Alc {
+  height: 30rem;
+  width: 30rem;
+  border-style: solid;
+  border-image: auto;
+  border-width: 1rem;
+  border-radius: 0.2rem;
+  border-color: white;
+}
+.Fransisco {
+  text-align: right;
+}
+#Fran {
+  height: 30rem;
+  width: 30rem;
+  border-style: solid;
+  border-image: auto;
+  border-width: 1rem;
+  border-radius: 0.2rem;
+  border-color: white;
+}
