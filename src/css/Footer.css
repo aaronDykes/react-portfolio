@@ -1,18 +1,23 @@
 .Footer {
   display: grid;
   height: 40vh;
-  background-color: #7291c9;
   grid:
     'footer footer footer footer'
     'footer footer footer footer'
     'footer footer footer footer'
     'footer footer footer footer';
+  background-image: linear-gradient(
+    to top right,
+    rgba(27, 85, 129, 0.9),
+    rgba(42, 138, 206, 0.9)
+  );
 }
 
 .LeftData {
   margin-top: 0.5rem;
   margin-left: 1rem;
-  color: rgb(93, 42, 3);
+
+  color: rgb(30, 27, 24);
 }
 .RightData {
   margin-top: 0.5rem;
@@ -20,7 +25,7 @@
 }
 .RightData a {
   text-decoration: none;
-  color: rgb(15, 51, 133);
+  color: rgb(30, 27, 24);
 }
 .RightData a:hover {
   text-decoration: underline;
@@ -41,12 +46,12 @@
 .LeftStudent {
   margin-left: 2rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(242, 238, 234);
 }
 .RightStudent {
   margin-right: 2rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(242, 238, 234);
 }

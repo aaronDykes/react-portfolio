@@ -6,7 +6,7 @@
 
   gap: 1rem;
   display: grid;
-  height: 150vh;
+  height: 110vh;
   background-color: rgb(233, 228, 222);
 }
 input {

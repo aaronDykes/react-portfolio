@@ -11,6 +11,7 @@ export default function Gallery () {
           Home
         </Link>
       </div>
+
       <div className='Top-Content'>
         <div className='Alcatraz'>
           <img id='Alc' src={Alc} alt='Alc' />

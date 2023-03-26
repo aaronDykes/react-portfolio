@@ -6,7 +6,11 @@
     'head head head head'
     'head head head head';
   grid-gap: 1rem;
-  background-color: #7291c9;
+  background-image: linear-gradient(
+    to top left,
+    rgba(37, 140, 214, 0.9),
+    rgba(13, 44, 67, 0.9)
+  );
 }
 
 .leftHeader {
@@ -38,8 +42,9 @@
 
 #dropBtn {
   padding: 1rem;
-  background-color: #7291c9;
-  border-color: #7291c9;
+  /* background-color: #7291c9;
+  border-color: #7291c9; */
+  box-sizing: content-box;
   color: rgb(233, 229, 225);
   border-radius: 0.8rem;
   font-size: 6rem;
@@ -49,9 +54,6 @@
 }
 
 #dropBtn:hover {
-  background-color: #7291c9;
-  border-color: #7291c9;
-
   color: rgb(254, 254, 254);
   text-decoration: underline;
 }
@@ -66,9 +68,10 @@
   border-color: #d9d9d9;
   border-radius: 0.4rem;
   text-decoration: none;
-  font-size: 1.5rem;
-  padding: 0.6rem;
-  color: rgb(47, 11, 92);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.9rem;
+  color: rgb(71, 66, 76);
   box-shadow: 0.2rem 0.5rem 1rem rgb(0, 0, 0, 0.1);
 }
 #navList a:hover {
@@ -79,7 +82,7 @@
   box-shadow: 0.2rem 0.8rem 1.5rem rgb(0, 0, 0, 0.05);
 }
 #navList li {
-  margin-bottom: 2rem;
+  margin-bottom: 2.8rem;
 }
 #navList li:active {
   transform: translateY(-0.1rem);
