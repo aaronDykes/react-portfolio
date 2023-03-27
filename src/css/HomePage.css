@@ -1,38 +1,33 @@
 .Home {
-  margin: 0.5rem;
-}
-
-.name {
   height: 90vh;
-  display: grid;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: bold;
-  color: rgb(63, 63, 63);
-  min-width: fit-content;
+  margin: 0.5rem;
   background-color: rgb(230, 222, 213);
+  min-width: fit-content;
   grid:
     'name name name'
     'name name name'
     'name name name'
-    'name name name'
-    'name name name'
-    'name name name'
-    'name name name'
     'name name name';
-  z-index: 1;
+  display: grid;
+}
+
+.name {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
 }
 
 .firstName {
   font-size: 6rem;
-  grid-area: 4 / 2;
+  grid-area: 2/ 2;
   margin-bottom: -3rem;
   animation: slideInRight 2s ease-out;
 }
 
 .lastName {
   font-size: 6rem;
-  grid-area: 5 / 2;
+  grid-area: 3 / 2;
   animation: slideInLeft 2s ease-out;
 }
 
