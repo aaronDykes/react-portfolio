@@ -8,8 +8,8 @@
     'footer footer footer footer';
   background-image: linear-gradient(
     to top right,
-    rgba(27, 85, 129, 0.9),
-    rgba(42, 138, 206, 0.9)
+    rgba(25, 97, 148, 0.9),
+    rgba(18, 60, 93, 0.9)
   );
 }
 
@@ -17,7 +17,7 @@
   margin-top: 0.5rem;
   margin-left: 1rem;
 
-  color: rgb(30, 27, 24);
+  color: rgb(215, 94, 94);
 }
 .RightData {
   margin-top: 0.5rem;
@@ -25,11 +25,11 @@
 }
 .RightData a {
   text-decoration: none;
-  color: rgb(30, 27, 24);
+  color: rgb(246, 123, 42);
 }
 .RightData a:hover {
   text-decoration: underline;
-  color: white;
+  color: rgb(215, 94, 94);
 }
 
 .LeftContact {
@@ -47,11 +47,12 @@
   margin-left: 2rem;
   font-weight: bold;
   font-size: 2rem;
-  color: rgb(242, 238, 234);
+
+  color: rgb(230, 230, 230);
 }
 .RightStudent {
   margin-right: 2rem;
   font-weight: bold;
   font-size: 2rem;
-  color: rgb(242, 238, 234);
+  color: rgb(230, 230, 230);
 }

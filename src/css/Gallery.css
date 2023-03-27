@@ -1,22 +1,28 @@
 .Gallery {
-  height: 185vh;
+  height: 100vh;
   grid:
+    'img img img'
+    'img img img'
     'img img img'
     'img img img'
     'img img img';
   display: grid;
+  row-gap: 2rem;
   background-image: linear-gradient(
       to top left,
-      rgba(37, 140, 214, 0.8),
-      rgba(13, 44, 67, 0.8)
+      rgba(37, 140, 214, 0.7),
+      rgba(13, 44, 67, 0.7)
     ),
     url('../assets/SanSky.png');
   background-size: cover;
   background-position: top;
+  min-width: fit-content;
+  min-height: fit-content;
 }
 #Head,
 #Head a,
 #Head a:active {
+  grid-area: 1 / 1;
   text-decoration: none;
   color: rgb(233, 229, 225);
   font-weight: bold;
@@ -32,60 +38,63 @@
   text-decoration: underline;
 }
 .Image {
-  margin-top: 6rem;
+  grid-area: 3 / 1;
 }
 
 .Top-Content {
-  grid-area: 2 / 1 / span 1 / span 3;
+  grid-area: 4 / 1 / span 1 / span 3;
   grid:
     'img img img'
     'img img img'
     'img img img';
   display: grid;
   position: relative;
-  height: fit-content;
-  margin: 1rem;
+  height: min-content;
+  min-height: max-content;
+  min-width: max-content;
+  margin: 4rem;
+  margin-bottom: -4rem;
 }
 .Redwood {
   text-align: center;
 }
 #Red {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 1rem;
+  border-width: 0.2rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
 
 .Alcatraz {
-  text-align: left;
+  text-align: right;
 }
 #Alc {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 1rem;
+  border-width: 0.2rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
 .Fransisco {
-  text-align: right;
+  text-align: left;
 }
 #Fran {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 1rem;
+  border-width: 0.2rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
 
 .Bottom-Content {
-  grid-area: 3 / 1 / span 1 / span 3;
+  grid-area: 5 / 1 / span 1 / span 3;
   grid:
     'img img img'
     'img img img'
@@ -93,20 +102,21 @@
   display: grid;
   position: relative;
   height: fit-content;
-  margin: 1rem;
-  margin-top: -8rem;
+  margin: 4rem;
+  min-height: max-content;
+  min-height: max-content;
 }
 
 .Toronto {
-  text-align: left;
+  text-align: right;
   grid-area: 2 / 1;
 }
 #Tor {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 1rem;
+  border-width: 0.2rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
@@ -116,24 +126,24 @@
 }
 
 #Bluf {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 1rem;
+  border-width: 0.2rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
 .Ontario {
-  text-align: right;
+  text-align: left;
   grid-area: 2 / 3;
 }
 #Ont {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 1rem;
+  border-width: 0.2rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
