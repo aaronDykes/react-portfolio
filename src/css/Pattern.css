@@ -1,5 +1,6 @@
 .Pattern-Container {
   margin: 0.5rem;
+  min-width: fit-content;
 }
 
 .Pattern {
