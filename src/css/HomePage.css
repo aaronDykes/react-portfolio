@@ -1,3 +1,7 @@
+.Home {
+  margin: 0.5rem;
+}
+
 .name {
   height: 90vh;
   display: grid;
@@ -5,6 +9,7 @@
   font-size: 4rem;
   font-weight: bold;
   color: rgb(63, 63, 63);
+  min-width: fit-content;
   background-color: rgb(230, 222, 213);
   grid:
     'name name name'

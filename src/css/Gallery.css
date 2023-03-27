@@ -7,17 +7,18 @@
     'img img img'
     'img img img';
   display: grid;
-  row-gap: 2rem;
+  row-gap: 6rem;
   background-image: linear-gradient(
       to top left,
-      rgba(37, 140, 214, 0.7),
-      rgba(13, 44, 67, 0.7)
+      rgba(88, 88, 88, 0.9),
+      rgba(9, 9, 9, 0.9)
     ),
     url('../assets/SanSky.png');
   background-size: cover;
   background-position: top;
   min-width: fit-content;
   min-height: fit-content;
+  margin: 0.5rem;
 }
 #Head,
 #Head a,
@@ -63,7 +64,7 @@
   width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 0.2rem;
+  border-width: 0.1rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
@@ -76,7 +77,7 @@
   width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 0.2rem;
+  border-width: 0.1rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
@@ -88,7 +89,7 @@
   width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 0.2rem;
+  border-width: 0.1rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
@@ -116,7 +117,7 @@
   width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 0.2rem;
+  border-width: 0.1rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
@@ -130,7 +131,7 @@
   width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 0.2rem;
+  border-width: 0.1rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }
@@ -143,7 +144,7 @@
   width: 25rem;
   border-style: solid;
   border-image: auto;
-  border-width: 0.2rem;
+  border-width: 0.1rem;
   border-radius: 0.2rem;
   border-color: rgb(233, 229, 225);
 }

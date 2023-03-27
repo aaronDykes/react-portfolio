@@ -1,6 +1,7 @@
 .Footer {
   display: grid;
-  height: 40vh;
+  height: 50vh;
+  min-width: fit-content;
   grid:
     'footer footer footer footer'
     'footer footer footer footer'
@@ -17,7 +18,7 @@
   margin-top: 0.5rem;
   margin-left: 1rem;
 
-  color: rgb(215, 94, 94);
+  color: rgb(246, 123, 42);
 }
 .RightData {
   margin-top: 0.5rem;

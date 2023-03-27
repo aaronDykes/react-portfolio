@@ -1,6 +1,7 @@
 .header {
   display: grid;
-  height: 40vh;
+  height: 50vh;
+  min-width: fit-content;
   grid:
     'head head head head'
     'head head head head'
@@ -45,7 +46,9 @@
   /* background-color: #7291c9;
   border-color: #7291c9; */
   box-sizing: content-box;
-  color: rgb(233, 229, 225);
+  /* color: rgb(233, 229, 225); */
+
+  color: rgb(246, 123, 42);
   border-radius: 0.8rem;
   font-size: 6rem;
   font-weight: bolder;
@@ -54,8 +57,7 @@
 }
 
 #dropBtn:hover {
-  color: rgb(254, 254, 254);
-  text-decoration: underline;
+  color: rgb(196, 87, 47);
 }
 
 #navList {
@@ -77,18 +79,18 @@
 #navList a:hover {
   color: white;
   box-sizing: content-box;
-  text-decoration: underline;
-  background-color: rgb(184, 95, 36);
+
+  background-color: rgb(196, 87, 47);
   box-shadow: 0.2rem 0.8rem 1.5rem rgb(0, 0, 0, 0.1);
 }
 #navList li {
   margin-bottom: 2.8rem;
 }
 #navList li:active {
-  transform: translateY(-0.1rem);
+  transform: translateY(-0.05rem);
 }
 #navList li:hover {
-  transform: translateY(-0.3rem);
+  transform: translateY(-0.15rem);
 }
 
 #rightNav {
