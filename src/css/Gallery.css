@@ -7,7 +7,7 @@
     'img img img'
     'img img img';
   display: grid;
-  row-gap: 6rem;
+  row-gap: 4rem;
   background-image: linear-gradient(
       to top left,
       rgba(88, 88, 88, 0.9),

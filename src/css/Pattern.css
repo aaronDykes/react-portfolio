@@ -11,8 +11,6 @@
   gap: 1rem;
   display: grid;
   height: 110vh;
-  min-height: fit-content;
-  min-width: fit-content;
   background-color: rgb(233, 228, 222);
 }
 input {

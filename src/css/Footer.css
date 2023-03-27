@@ -2,6 +2,7 @@
   display: grid;
   height: 50vh;
   min-width: fit-content;
+  min-height: fit-content;
   grid:
     'footer footer footer footer'
     'footer footer footer footer'
