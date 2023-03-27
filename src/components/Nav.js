@@ -11,9 +11,9 @@ export default function Nav () {
         <div className='dropdown-content'>
           <nav>
             <ul id='navList'>
-              <li className='dropLinks'>
+              {/* <li className='dropLinks'>
                 <Link to='/Physics'>Physics</Link>
-              </li>
+              </li> */}
               <li className='dropLinks'>
                 <Link to='/Pattern'>Pattern</Link>
               </li>
