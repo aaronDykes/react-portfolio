@@ -1,8 +1,15 @@
 .Triangle {
-  text-align: left;
-  margin-left: 2rem;
+  text-align: center;
 }
 .Triangle h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: rgb(0, 84, 148);
+}
+@media (max-width: 30rem) {
+  .Triangle {
+    text-align: center;
+  }
+  .Triangle h2 {
+    font-size: 2rem;
+  }
 }

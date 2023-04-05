@@ -1,21 +1,24 @@
 .Pattern-Container {
   margin: 0.5rem;
   min-width: fit-content;
+  height: fit-content;
 }
 
 .Pattern {
   grid:
     'pat pat pat'
     'pat pat pat'
+    'pat pat pat'
+    'pat pat pat'
+    'pat pat pat'
     'pat pat pat';
-
   gap: 1rem;
   display: grid;
   height: 110vh;
   background-color: rgb(233, 228, 222);
 }
 input {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: inherit;
   border-radius: 0.9rem;
   padding: 1rem;
@@ -30,11 +33,52 @@ div .Pat {
 }
 
 .Triangle {
-  grid-area: 2 / 1;
+  grid-area: 3 / 2;
 }
 .Diamond {
-  grid-area: 2 / 2;
+  grid-area: 4 / 2;
 }
 .Rectangle {
-  grid-area: 2 / 3;
+  grid-area: 5 / 2;
+}
+
+@media (max-width: 30rem) or (max-width: 50rem) {
+  .Pattern-Container {
+    min-width: fit-content;
+    height: min-content;
+    overflow: scroll;
+  }
+  .Pattern {
+    grid:
+      'pat pat pat'
+      'pat pat pat'
+      'pat pat pat'
+      'pat pat pat'
+      'pat pat pat'
+      'pat pat pat';
+    gap: 1rem;
+    display: grid;
+    height: 110vh;
+    min-width: fit-content;
+    background-color: rgb(233, 228, 222);
+  }
+  input {
+    font-size: 1rem;
+  }
+  div .Pat {
+    margin-top: 2rem;
+    font-size: 0.5rem;
+  }
+  .Triangle {
+    min-width: fit-content;
+    grid-area: 3 / 2;
+  }
+  .Diamond {
+    min-width: fit-content;
+    grid-area: 4 / 2;
+  }
+  .Rectangle {
+    min-width: fit-content;
+    grid-area: 5 / 2;
+  }
 }

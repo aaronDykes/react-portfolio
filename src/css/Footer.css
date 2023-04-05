@@ -1,18 +1,17 @@
 .Footer {
-  display: grid;
   height: 50vh;
   grid:
     'footer footer footer footer'
     'footer footer footer footer'
     'footer footer footer footer'
     'footer footer footer footer';
+  display: grid;
   background-image: linear-gradient(
     to top right,
     rgba(67, 139, 191, 0.9),
     rgba(43, 98, 139, 0.9)
   );
 }
-
 .LeftData {
   margin-top: 0.5rem;
   margin-left: 1rem;
@@ -47,7 +46,6 @@
   margin-left: 2rem;
   font-weight: bold;
   font-size: 2rem;
-
   color: rgb(230, 230, 230);
 }
 .RightStudent {
@@ -55,4 +53,19 @@
   font-weight: bold;
   font-size: 2rem;
   color: rgb(230, 230, 230);
+}
+
+@media (max-width: 30rem) {
+  .LeftContact {
+    margin: 0.5rem;
+  }
+  .RightContact {
+    margin: 0.5rem;
+  }
+  .LeftStudent {
+    font-size: 1.3rem;
+  }
+  .RightStudent {
+    font-size: 1.3rem;
+  }
 }

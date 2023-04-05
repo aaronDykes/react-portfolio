@@ -1,12 +1,11 @@
 .Home {
   margin: 0.5rem;
-  min-width: fit-content;
 }
 
 .name {
-  height: 90vh;
-  display: grid;
+  height: 70vh;
   text-align: center;
+  overflow: scroll;
   font-size: 4rem;
   font-weight: bold;
   color: rgb(63, 63, 63);
@@ -17,23 +16,51 @@
     'name name name'
     'name name name'
     'name name name'
-    'name name name'
-    'name name name'
     'name name name';
-  z-index: 1;
+  display: grid;
 }
 
 .firstName {
+  grid-area: 3 / 2 / span 1 / span 1;
   font-size: 6rem;
-  grid-area: 4 / 2;
   margin-bottom: -3rem;
   animation: slideInRight 2s ease-out;
 }
 
 .lastName {
+  grid-area: 4 / 2 / span 1 / span 1;
   font-size: 6rem;
-  grid-area: 5 / 2;
   animation: slideInLeft 2s ease-out;
+}
+
+@media (max-width: 30rem) {
+  .Home {
+    min-width: fit-content;
+  }
+  .name {
+    min-width: fit-content;
+    grid:
+      'name name name'
+      'name name name'
+      'name name name'
+      'name name name'
+      'name name name'
+      'name name name';
+    display: grid;
+  }
+
+  .firstName {
+    grid-area: 3 / 2 / span 1 / span 1;
+    font-size: 5rem;
+    margin-bottom: -5rem;
+    animation: slideInRight 2s ease-out;
+  }
+
+  .lastName {
+    grid-area: 4 / 2 / span 1 / span 1;
+    font-size: 5rem;
+    animation: slideInLeft 2s ease-out;
+  }
 }
 
 @keyframes slideInRight {

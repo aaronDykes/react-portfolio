@@ -1,13 +1,10 @@
 .header {
-  display: grid;
   height: 50vh;
-  min-width: fit-content;
-  min-height: fit-content;
   grid:
     'head head head head'
     'head head head head'
     'head head head head';
-  grid-gap: 1rem;
+  display: grid;
   background-image: linear-gradient(
     to top left,
     rgba(86, 148, 193, 0.9),
@@ -44,11 +41,7 @@
 
 #dropBtn {
   padding: 1rem;
-  /* background-color: #7291c9;
-  border-color: #7291c9; */
   box-sizing: content-box;
-  /* color: rgb(233, 229, 225); */
-
   color: rgb(246, 123, 42);
   border-radius: 0.8rem;
   font-size: 6rem;
@@ -96,4 +89,16 @@
 
 #rightNav {
   text-align: right;
+}
+@media (max-width: 40rem) {
+  .header {
+    min-width: fit-content;
+  }
+  #dropBtn {
+    font-size: 5rem;
+  }
+  #navList a,
+  #navList:active a {
+    font-size: 1.5rem;
+  }
 }

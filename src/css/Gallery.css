@@ -3,6 +3,7 @@
   grid:
     'img img img'
     'img img img'
+    'img img img'
     'img img img';
   display: grid;
   background-image: linear-gradient(
@@ -14,15 +15,17 @@
   margin: 0.5rem;
 }
 
+.Image {
+  grid-area: 2 / 1;
+  margin-left: 5rem;
+}
 #Head,
 #Head a,
 #Head a:active {
-  grid-area: 1 / 1;
   text-decoration: none;
   color: rgb(233, 229, 225);
   font-weight: bold;
   padding: 1rem;
-  margin-left: 2rem;
   font-size: 6rem;
   font-weight: bolder;
   letter-spacing: 0.7rem;
@@ -32,12 +35,9 @@
   color: rgb(254, 254, 254);
   text-decoration: underline;
 }
-.Image {
-  grid-area: 1 / 1;
-}
 
 .Top-Content {
-  grid-area: 2 / 1 / span 1 / span 3;
+  grid-area: 3 / 1 / span 1 / span 3;
   grid:
     'img img img'
     'img img img'
@@ -88,7 +88,7 @@
 }
 
 .Bottom-Content {
-  grid-area: 3 / 1 / span 1 / span 3;
+  grid-area: 4 / 1 / span 1 / span 3;
   grid:
     'img img img'
     'img img img'
@@ -139,9 +139,10 @@
   border-color: rgb(233, 229, 225);
 }
 
-@media (max-width: 30rem) and (max-width: 50rem) {
+@media (max-width: 30rem) or (max-width: 50rem) {
   .Gallery {
     grid:
+      'img img'
       'img img'
       'img img'
       'img img'
@@ -153,32 +154,40 @@
     min-width: fit-content;
     margin: 0.5rem;
   }
+
+  .Image {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    grid-area: 2 / 1;
+  }
+
   #Head,
   #Head a,
   #Head a:active {
-    grid-area: 1 / 1 / span 1 / span 1;
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 1rem;
-    margin-left: 2rem;
     font-weight: bolder;
     letter-spacing: 0.7rem;
   }
   .Top-Content {
-    grid-area: 2 / 1 / span 2 / span 2;
+    grid-area: 3 / 1 / span 2 / span 2;
     grid:
       'img'
       'img'
       'img';
     display: grid;
+    margin: 0.1rem;
     min-width: fit-content;
   }
   .Bottom-Content {
-    grid-area: 4 / 1 / span 2 / span 2;
+    grid-area: 5/ 1 / span 2 / span 2;
     grid:
       'img'
       'img'
       'img';
     display: grid;
+    margin: 0.1rem;
     min-width: fit-content;
   }
   .Alcatraz {
