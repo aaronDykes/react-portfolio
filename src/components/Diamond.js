@@ -33,7 +33,10 @@ export default function Diamond () {
   return (
     <div className='Diamond'>
       <div>
-        <h2>Print a Diamond</h2>
+        <h2>
+          Print a <br />
+          Diamond
+        </h2>
         <br />
         <input
           className='Inp'

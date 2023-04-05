@@ -31,7 +31,10 @@ export default function Rectangle () {
   return (
     <div className='Rectangle'>
       <div>
-        <h2>Print a Rectangle</h2>
+        <h2>
+          Print a <br />
+          Rectangle
+        </h2>
         <br />
         <input
           className='Inp'

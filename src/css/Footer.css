@@ -12,10 +12,16 @@
     rgba(43, 98, 139, 0.9)
   );
 }
+
+dt {
+  font-size: 2.5rem;
+}
+dd {
+  font-size: 2rem;
+}
 .LeftData {
   margin-top: 0.5rem;
   margin-left: 1rem;
-
   color: rgb(33, 33, 33);
 }
 .RightData {
@@ -45,28 +51,35 @@
 .LeftStudent {
   margin-left: 2rem;
   font-weight: bold;
-  font-size: 1.7rem;
   color: rgb(255, 255, 255);
 }
 .RightStudent {
   margin-right: 2rem;
   font-weight: bold;
-  font-size: 1.7rem;
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 50rem) {
+  dt {
+    font-size: 1.7rem;
+    margin-bottom: -0.3rem;
+  }
+  dd {
+    font-size: 1.5rem;
+  }
   .Footer {
     height: 30vh;
   }
   .LeftContact {
     grid-area: 4 / 1;
     text-align: left;
+    margin-bottom: 3rem;
   }
   .RightContact {
     grid-area: 3 / 1;
     text-align: left;
-    margin-bottom: -2rem;
+    margin-top: -1rem;
+    /* margin-bottom: -1rem; */
   }
   .RightData {
     margin-left: 1rem;
@@ -75,11 +88,7 @@
   .LeftData {
     margin-bottom: -1rem;
   }
-  .LeftStudent {
-    font-size: 1.3rem;
-  }
   .RightStudent {
     margin-left: 2rem;
-    font-size: 1.3rem;
   }
 }

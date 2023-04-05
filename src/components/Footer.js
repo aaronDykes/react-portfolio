@@ -17,7 +17,7 @@ function RightDescription () {
   return (
     <div className='RightContact'>
       <dl className='RightStudent'>
-        <dt>Check out the code</dt>
+        <dt>Source</dt>
         <dd className='RightData'>
           <a
             href='https://github.com/aaronDykes/react-portfolio/tree/reactBranch'
@@ -28,14 +28,14 @@ function RightDescription () {
           </a>
         </dd>
         <br />
-        <dt>Add me on LinkedIn</dt>
+        <dt>LinkedIn</dt>
         <dd className='RightData'>
           <a
             href='https://www.linkedin.com/in/aaron-dykes-691524216/'
             target='_blank'
             rel='noreferrer'
           >
-            LinkedIn
+            Link
           </a>
         </dd>
       </dl>

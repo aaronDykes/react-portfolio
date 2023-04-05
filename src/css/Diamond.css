@@ -2,15 +2,15 @@
   text-align: center;
 }
 .Diamond h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: rgb(0, 84, 148);
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 50rem) {
   .Diamond {
     text-align: center;
   }
   .Diamond h2 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }

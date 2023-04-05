@@ -33,11 +33,11 @@ export default function Pattern () {
         <div className='Triangle'>
           <Triangle />
         </div>
-        <div className='Rectangle'>
-          <Rectangle />
-        </div>
         <div className='Diamond'>
           <Diamond />
+        </div>
+        <div className='Rectangle'>
+          <Rectangle />
         </div>
       </div>
       <Footer />

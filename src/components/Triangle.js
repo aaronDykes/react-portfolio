@@ -28,7 +28,10 @@ export default function Triangle () {
   return (
     <div className='Triangle'>
       <div>
-        <h2>Print a triangle</h2>
+        <h2>
+          Print a <br />
+          triangle
+        </h2>
         <br />
         <input
           className='Inp'

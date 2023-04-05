@@ -32,7 +32,7 @@
   animation: slideInLeft 2s ease-out;
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 50rem) {
   .Home {
     min-width: fit-content;
   }

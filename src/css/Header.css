@@ -51,7 +51,7 @@
 }
 
 #dropBtn:hover {
-  color: rgb(246, 123, 42);
+  color: rgb(53, 53, 53);
 }
 
 #navList {
@@ -90,7 +90,7 @@
 #rightNav {
   text-align: right;
 }
-@media (max-width: 40rem) {
+@media (max-width: 50rem) {
   .header {
     min-width: fit-content;
     height: 30vh;
