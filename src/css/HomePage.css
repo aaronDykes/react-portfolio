@@ -37,6 +37,7 @@
     min-width: fit-content;
   }
   .name {
+    height: 60vh;
     min-width: fit-content;
     grid:
       'name name name'

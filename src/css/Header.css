@@ -1,5 +1,5 @@
 .header {
-  height: 50vh;
+  height: 40vh;
   grid:
     'head head head head'
     'head head head head'
@@ -93,6 +93,7 @@
 @media (max-width: 40rem) {
   .header {
     min-width: fit-content;
+    height: 30vh;
   }
   #dropBtn {
     font-size: 5rem;

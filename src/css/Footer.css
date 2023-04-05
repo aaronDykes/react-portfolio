@@ -1,5 +1,5 @@
 .Footer {
-  height: 50vh;
+  height: 40vh;
   grid:
     'footer footer footer footer'
     'footer footer footer footer'
@@ -16,7 +16,7 @@
   margin-top: 0.5rem;
   margin-left: 1rem;
 
-  color: rgb(246, 123, 42);
+  color: rgb(33, 33, 33);
 }
 .RightData {
   margin-top: 0.5rem;
@@ -24,7 +24,7 @@
 }
 .RightData a {
   text-decoration: none;
-  color: rgb(246, 123, 42);
+  color: rgb(33, 33, 33);
 }
 .RightData a:hover {
   text-decoration: underline;
@@ -45,27 +45,41 @@
 .LeftStudent {
   margin-left: 2rem;
   font-weight: bold;
-  font-size: 2rem;
-  color: rgb(230, 230, 230);
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
 }
 .RightStudent {
   margin-right: 2rem;
   font-weight: bold;
-  font-size: 2rem;
-  color: rgb(230, 230, 230);
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 30rem) {
+  .Footer {
+    height: 30vh;
+  }
   .LeftContact {
-    margin: 0.5rem;
+    grid-area: 4 / 1;
+    text-align: left;
   }
   .RightContact {
-    margin: 0.5rem;
+    grid-area: 3 / 1;
+    text-align: left;
+    margin-bottom: -2rem;
+  }
+  .RightData {
+    margin-left: 1rem;
+    margin-bottom: -0.8rem;
+  }
+  .LeftData {
+    margin-bottom: -0.8rem;
   }
   .LeftStudent {
     font-size: 1.3rem;
   }
   .RightStudent {
+    margin-left: 2rem;
     font-size: 1.3rem;
   }
 }
