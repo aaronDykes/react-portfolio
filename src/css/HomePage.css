@@ -5,7 +5,6 @@
 .name {
   height: 70vh;
   text-align: center;
-  overflow: scroll;
   font-size: 4rem;
   font-weight: bold;
   color: rgb(63, 63, 63);

@@ -34,12 +34,15 @@ div .Pat {
 
 .Triangle {
   grid-area: 3 / 2;
+  margin-bottom: 2rem;
 }
 .Diamond {
   grid-area: 4 / 2;
+  margin-bottom: 2rem;
 }
 .Rectangle {
   grid-area: 5 / 2;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 30rem) or (max-width: 50rem) {
@@ -71,14 +74,17 @@ div .Pat {
   }
   .Triangle {
     min-width: fit-content;
+    margin-bottom: 2rem;
     grid-area: 3 / 2;
   }
   .Diamond {
     min-width: fit-content;
+    margin-bottom: 2rem;
     grid-area: 4 / 2;
   }
   .Rectangle {
     min-width: fit-content;
+    margin-bottom: 2rem;
     grid-area: 5 / 2;
   }
 }

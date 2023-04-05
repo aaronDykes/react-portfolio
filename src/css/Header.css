@@ -7,8 +7,8 @@
   display: grid;
   background-image: linear-gradient(
     to top left,
-    rgba(86, 148, 193, 0.9),
-    rgba(29, 78, 115, 0.9)
+    rgba(110, 172, 216, 0.9),
+    rgba(54, 108, 149, 0.9)
   );
 }
 
@@ -42,16 +42,16 @@
 #dropBtn {
   padding: 1rem;
   box-sizing: content-box;
-  color: rgb(246, 123, 42);
   border-radius: 0.8rem;
   font-size: 6rem;
+  color: rgb(219, 219, 219);
   font-weight: bolder;
   letter-spacing: 0.7rem;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 #dropBtn:hover {
-  color: rgb(196, 87, 47);
+  color: rgb(246, 123, 42);
 }
 
 #navList {
