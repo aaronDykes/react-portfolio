@@ -139,7 +139,7 @@
   border-color: rgb(233, 229, 225);
 }
 
-@media (max-width: 30rem) or (max-width: 50rem) {
+@media (max-width: 50rem) {
   .Gallery {
     grid:
       'img img'
