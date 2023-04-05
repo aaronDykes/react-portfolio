@@ -4,10 +4,10 @@ function LeftDescription () {
   return (
     <div className='LeftContact'>
       <dl className='LeftStudent'>
-        <dt>Email:</dt>
+        <dt>Email</dt>
         <dd className='LeftData'>aaron.dykes99@gmail.com</dd>
         <br />
-        <dt>Phone:</dt>
+        <dt>Phone</dt>
         <dd className='LeftData'>(613) 447-7909</dd>
       </dl>
     </div>

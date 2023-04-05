@@ -53,6 +53,7 @@
 
 .Redwood {
   text-align: center;
+  margin-bottom: 2rem;
 }
 #Red {
   height: 25rem;
@@ -66,6 +67,7 @@
 
 .Alcatraz {
   text-align: right;
+  margin-bottom: 2rem;
 }
 #Alc {
   height: 25rem;
@@ -78,6 +80,7 @@
 }
 .Fransisco {
   text-align: left;
+  margin-bottom: 2rem;
 }
 #Fran {
   height: 25rem;
@@ -195,26 +198,32 @@
   .Alcatraz {
     grid-area: 1 / 1;
     text-align: center;
+    margin-bottom: 1rem;
   }
   .Redwood {
     grid-area: 2 / 1;
     text-align: center;
+    margin-bottom: 1rem;
   }
   .Fransisco {
     grid-area: 3 / 1;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   .Ontario {
     grid-area: 1 / 1;
     text-align: center;
+    margin-bottom: 1rem;
   }
   .Bluffs {
     grid-area: 2 / 1;
     text-align: center;
+    margin-bottom: 1rem;
   }
   .Toronto {
     grid-area: 3 / 1;
     text-align: center;
+    margin-bottom: 1rem;
   }
 }
