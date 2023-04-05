@@ -1,8 +1,6 @@
 .Footer {
   display: grid;
   height: 50vh;
-  min-width: fit-content;
-  min-height: fit-content;
   grid:
     'footer footer footer footer'
     'footer footer footer footer'
@@ -10,8 +8,8 @@
     'footer footer footer footer';
   background-image: linear-gradient(
     to top right,
-    rgba(25, 97, 148, 0.9),
-    rgba(18, 60, 93, 0.9)
+    rgba(67, 139, 191, 0.9),
+    rgba(43, 98, 139, 0.9)
   );
 }
 

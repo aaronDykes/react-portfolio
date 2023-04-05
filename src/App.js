@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Gallery from './pages/Gallery'
 import Physics from './pages/Physics'
 import Pattern from './pages/Pattern'
+
 export default function App () {
   return (
     <div>
