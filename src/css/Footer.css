@@ -8,8 +8,8 @@
   display: grid;
   background-image: linear-gradient(
     to top right,
-    rgba(67, 139, 191, 0.9),
-    rgba(43, 98, 139, 0.9)
+    rgba(89, 175, 237, 0.9),
+    rgba(55, 122, 172, 0.9)
   );
 }
 
@@ -61,11 +61,11 @@ dd {
 
 @media (max-width: 50rem) {
   dt {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     margin-bottom: -0.3rem;
   }
   dd {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   .Footer {
     height: 30vh;

@@ -51,7 +51,7 @@
 }
 
 #dropBtn:hover {
-  color: rgb(53, 53, 53);
+  color: rgb(198, 198, 198);
 }
 
 #navList {
@@ -60,18 +60,18 @@
 
 #navList a,
 #navList:active a {
-  background-color: #d9d9d9;
+  background-color: #5c5c5cd0;
   border-color: #d9d9d9;
   border-radius: 0.4rem;
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
   padding: 0.9rem;
-  color: rgb(71, 66, 76);
+  color: rgb(235, 235, 235);
   box-shadow: 0.2rem 0.5rem 1rem rgb(0, 0, 0, 0.2);
 }
 #navList a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
   box-sizing: content-box;
 
   background-color: rgb(196, 87, 47);
