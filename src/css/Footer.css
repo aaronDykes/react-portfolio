@@ -1,5 +1,6 @@
 .Footer {
   height: 40vh;
+  min-height: fit-content;
   grid:
     'footer footer footer footer'
     'footer footer footer footer'
@@ -59,16 +60,13 @@ dd {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 40rem) and (orientation: portrait) {
   dt {
     font-size: 1.4rem;
     margin-bottom: -0.3rem;
   }
   dd {
     font-size: 1.2rem;
-  }
-  .Footer {
-    min-height: fit-content;
   }
   .LeftContact {
     grid-area: 4 / 1;
@@ -93,7 +91,7 @@ dd {
   }
 }
 
-@media (max-height: 27rem) {
+@media (max-height: 35rem) {
   .RightContact {
     margin-top: 1rem;
   }
@@ -108,7 +106,8 @@ dd {
     font-size: 0.8rem;
   }
 }
-@media (min-height: 43rem) {
+
+@media (max-height: 43rem) and (orientation: landscape) {
   .RightContact {
     margin-bottom: -2rem;
   }
