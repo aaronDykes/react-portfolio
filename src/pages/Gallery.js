@@ -13,7 +13,7 @@ export default function Gallery () {
     <div className='Gallery'>
       <div className='Menu'>
         <Link to='/' id='Head'>
-          Home
+          menu
         </Link>
       </div>
 
