@@ -19,7 +19,6 @@ export default function Gallery () {
 
       <div className='Top-Content'>
         {arr.map(el => {
-          console.log(el)
           return (
             <div className='Images'>
               <img src={el} alt={el} className='Image'></img>
