@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.c52a1cb0.css",
-    "main.js": "/react-portfolio/static/js/main.f1917f25.js",
+    "main.css": "/react-portfolio/static/css/main.92737312.css",
+    "main.js": "/react-portfolio/static/js/main.e7e50bed.js",
     "static/media/Tree.png": "/react-portfolio/static/media/Tree.06cde1b73282ccf6071f.png",
     "static/media/Ontario.png": "/react-portfolio/static/media/Ontario.24c6e50e573ca7b07beb.png",
     "static/media/Bluffs.png": "/react-portfolio/static/media/Bluffs.f5eb379bba69af41d1f5.png",
@@ -11,11 +11,11 @@
     "static/media/SanFran.png": "/react-portfolio/static/media/SanFran.afd516c77597863bb751.png",
     "static/media/Alcatraz.png": "/react-portfolio/static/media/Alcatraz.8a764c21e0e7c046af22.png",
     "index.html": "/react-portfolio/index.html",
-    "main.c52a1cb0.css.map": "/react-portfolio/static/css/main.c52a1cb0.css.map",
-    "main.f1917f25.js.map": "/react-portfolio/static/js/main.f1917f25.js.map"
+    "main.92737312.css.map": "/react-portfolio/static/css/main.92737312.css.map",
+    "main.e7e50bed.js.map": "/react-portfolio/static/js/main.e7e50bed.js.map"
   },
   "entrypoints": [
-    "static/css/main.c52a1cb0.css",
-    "static/js/main.f1917f25.js"
+    "static/css/main.92737312.css",
+    "static/js/main.e7e50bed.js"
   ]
 }
