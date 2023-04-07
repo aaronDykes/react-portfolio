@@ -6,7 +6,7 @@ export default function Nav () {
     <div className='leftHeader'>
       <div className='dropdown'>
         <Link to='/' id='dropBtn'>
-          Home
+          menu
         </Link>
         <div className='dropdown-content'>
           <nav>

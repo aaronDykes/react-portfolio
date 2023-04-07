@@ -14,10 +14,10 @@
 }
 
 dt {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 dd {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .LeftData {
   margin-top: 0.5rem;
@@ -59,16 +59,16 @@ dd {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 40rem) {
   dt {
     font-size: 1.4rem;
     margin-bottom: -0.3rem;
   }
   dd {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .Footer {
-    height: 30vh;
+    min-height: fit-content;
   }
   .LeftContact {
     grid-area: 4 / 1;
@@ -90,5 +90,33 @@ dd {
   }
   .RightStudent {
     margin-left: 2rem;
+  }
+}
+
+@media (max-height: 27rem) {
+  .RightContact {
+    margin-top: 1rem;
+  }
+  .LeftContact {
+    margin-bottom: 2rem;
+  }
+  dt {
+    font-size: 1rem;
+    margin-bottom: -0.3rem;
+  }
+  dd {
+    font-size: 0.8rem;
+  }
+}
+@media (min-height: 43rem) {
+  .RightContact {
+    margin-bottom: -2rem;
+  }
+  dt {
+    font-size: 1.7rem;
+    margin-bottom: -0.3rem;
+  }
+  dd {
+    font-size: 1.3rem;
   }
 }

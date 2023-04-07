@@ -90,14 +90,12 @@
 #rightNav {
   text-align: right;
 }
-@media (max-width: 50rem) {
+@media (max-width: 40rem) {
   .header {
     min-width: fit-content;
-    height: 30vh;
+    min-height: fit-content;
   }
-  #dropBtn {
-    font-size: 5rem;
-  }
+
   #navList a,
   #navList:active a {
     font-size: 1.5rem;

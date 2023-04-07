@@ -4,11 +4,11 @@ function LeftDescription () {
   return (
     <div className='LeftContact'>
       <dl className='LeftStudent'>
-        <dt>Email</dt>
+        <dt>email</dt>
         <dd className='LeftData'>aaron.dykes99@gmail.com</dd>
         <br />
-        <dt>Phone</dt>
-        <dd className='LeftData'>(613) 447-7909</dd>
+        <dt>phone</dt>
+        <dd className='LeftData'>613-447-7909</dd>
       </dl>
     </div>
   )
@@ -17,25 +17,25 @@ function RightDescription () {
   return (
     <div className='RightContact'>
       <dl className='RightStudent'>
-        <dt>Source</dt>
+        <dt>source</dt>
         <dd className='RightData'>
           <a
             href='https://github.com/aaronDykes/react-portfolio/tree/reactBranch'
             target='_blank'
             rel='noreferrer'
           >
-            Code
+            code
           </a>
         </dd>
         <br />
-        <dt>LinkedIn</dt>
+        <dt>linkedin</dt>
         <dd className='RightData'>
           <a
             href='https://www.linkedin.com/in/aaron-dykes-691524216/'
             target='_blank'
             rel='noreferrer'
           >
-            Link
+            link
           </a>
         </dd>
       </dl>
