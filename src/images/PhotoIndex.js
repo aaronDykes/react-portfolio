@@ -7,4 +7,14 @@ import Tor from './Ocean.png'
 import Bluffs from './Bluffs.png'
 import Ontario from './Ontario.png'
 
-export { Red, Alc, SanSky, SanFran, SanSun, Tor, Bluffs, Ontario }
+const Images = {
+  Red,
+  Alc,
+  SanSky,
+  SanFran,
+  SanSun,
+  Tor,
+  Bluffs,
+  Ontario
+}
+export default Images

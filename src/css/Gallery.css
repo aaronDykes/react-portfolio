@@ -1,5 +1,4 @@
 .Gallery {
-  height: 130vh;
   grid:
     'img img img'
     'img img img'
@@ -8,16 +7,16 @@
   display: grid;
   height: fit-content;
   background-image: linear-gradient(
-      to top left,
-      rgba(88, 88, 88, 0.9),
-      rgba(9, 9, 9, 0.9)
-    ),
-    url('../assets/SanSky.png');
+    to top left,
+    rgba(88, 88, 88, 0.9),
+    rgba(9, 9, 9, 0.9)
+  );
+  background-size: cover;
   margin: 0.5rem;
 }
 
-.Image {
-  grid-area: 2 / 1;
+.Menu {
+  grid-area: 2 / 2;
   margin-top: 5rem;
   margin-left: 5rem;
 }
@@ -45,106 +44,201 @@
     'img img img'
     'img img img';
   display: grid;
-  position: relative;
-  height: min-content;
-  margin: 3rem;
-  margin-bottom: -4rem;
-}
-
-.Redwood {
+  height: fit-content;
+  min-width: fit-content;
   text-align: center;
-  margin-bottom: 2rem;
-}
-#Red {
-  height: 25rem;
-  width: 25rem;
-  border-style: solid;
-  border-image: auto;
-  border-width: 0.1rem;
-  border-radius: 0.2rem;
-  border-color: rgb(233, 229, 225);
-}
-
-.Alcatraz {
-  text-align: right;
-  margin-bottom: 2rem;
-}
-#Alc {
-  height: 25rem;
-  width: 25rem;
-  border-style: solid;
-  border-image: auto;
-  border-width: 0.1rem;
-  border-radius: 0.2rem;
-  border-color: rgb(233, 229, 225);
-}
-.Fransisco {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-#Fran {
-  height: 25rem;
-  width: 25rem;
-  border-style: solid;
-  border-image: auto;
-  border-width: 0.1rem;
-  border-radius: 0.2rem;
-  border-color: rgb(233, 229, 225);
-}
-
-.Bottom-Content {
-  grid-area: 4 / 1 / span 1 / span 3;
-  grid:
-    'img img img'
-    'img img img'
-    'img img img';
-  display: grid;
-  position: relative;
   margin: 3rem;
 }
 
-.Toronto {
-  text-align: right;
-  grid-area: 2 / 1;
-}
-#Tor {
-  height: 25rem;
-  width: 25rem;
+.Image {
+  height: 30rem;
+  width: 30rem;
   border-style: solid;
   border-image: auto;
   border-width: 0.1rem;
   border-radius: 0.2rem;
+  margin-bottom: 2rem;
   border-color: rgb(233, 229, 225);
 }
-.Bluffs {
-  text-align: center;
-  grid-area: 2 / 2;
-}
+@media (max-width: 89rem) {
+  .Gallery {
+    grid:
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img';
+    display: grid;
+    margin: 0.5rem;
+  }
 
-#Bluf {
-  height: 25rem;
-  width: 25rem;
-  border-style: solid;
-  border-image: auto;
-  border-width: 0.1rem;
-  border-radius: 0.2rem;
-  border-color: rgb(233, 229, 225);
-}
-.Ontario {
-  text-align: left;
-  grid-area: 2 / 3;
-}
-#Ont {
-  height: 25rem;
-  width: 25rem;
-  border-style: solid;
-  border-image: auto;
-  border-width: 0.1rem;
-  border-radius: 0.2rem;
-  border-color: rgb(233, 229, 225);
-}
+  .Menu {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    grid-area: 2 / 1;
+  }
 
+  #Head,
+  #Head a,
+  #Head a:active {
+    font-size: 4rem;
+    padding: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.7rem;
+  }
+  .Top-Content {
+    grid-area: 3 / 1 / span 2 / span 3;
+    grid:
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img';
+    display: grid;
+    min-height: fit-content;
+    margin: 0.1rem;
+  }
+  .Image {
+    height: 28rem;
+    width: 28rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 75rem) {
+  .Gallery {
+    grid:
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img';
+    display: grid;
+    margin: 0.5rem;
+  }
+
+  .Menu {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    grid-area: 2 / 1;
+  }
+
+  #Head,
+  #Head a,
+  #Head a:active {
+    font-size: 4rem;
+    padding: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.7rem;
+  }
+  .Top-Content {
+    grid-area: 3 / 1 / span 2 / span 3;
+    grid:
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img';
+    display: grid;
+    min-height: fit-content;
+    margin: 0.1rem;
+  }
+  .Image {
+    height: 24rem;
+    width: 24rem;
+    margin-bottom: 1rem;
+  }
+}
 @media (max-width: 50rem) {
+  .Gallery {
+    grid:
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img';
+    display: grid;
+    margin: 0.5rem;
+  }
+
+  .Menu {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    grid-area: 2 / 1;
+  }
+
+  #Head,
+  #Head a,
+  #Head a:active {
+    font-size: 4rem;
+    padding: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.7rem;
+  }
+  .Top-Content {
+    grid-area: 3 / 1 / span 2 / span 3;
+    grid:
+      'img img img'
+      'img img img'
+      'img img img';
+    display: grid;
+    min-height: fit-content;
+    margin: 0.1rem;
+  }
+  .Image {
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 45rem) {
+  .Gallery {
+    grid:
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img'
+      'img img img';
+    display: grid;
+    margin: 0.5rem;
+  }
+
+  .Menu {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    grid-area: 2 / 1;
+  }
+
+  #Head,
+  #Head a,
+  #Head a:active {
+    font-size: 4rem;
+    padding: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.7rem;
+  }
+  .Top-Content {
+    grid-area: 3 / 1 / span 2 / span 3;
+    grid:
+      'img img img'
+      'img img img'
+      'img img img';
+    display: grid;
+    min-height: fit-content;
+    margin: 0.1rem;
+  }
+  .Image {
+    height: 17rem;
+    width: 17rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 33rem) {
   .Gallery {
     grid:
       'img img'
@@ -154,12 +248,11 @@
       'img img'
       'img img';
     display: grid;
-    height: fit-content;
-    min-width: fit-content;
     margin: 0.5rem;
+    min-width: fit-content;
   }
 
-  .Image {
+  .Menu {
     margin-left: 2rem;
     margin-top: 3rem;
     margin-bottom: 5rem;
@@ -177,53 +270,61 @@
   .Top-Content {
     grid-area: 3 / 1 / span 2 / span 2;
     grid:
-      'img'
-      'img'
-      'img';
+      'img img'
+      'img img'
+      'img img';
     display: grid;
-    margin: 0.1rem;
     min-width: fit-content;
+    margin: 0.1rem;
   }
-  .Bottom-Content {
-    grid-area: 5/ 1 / span 2 / span 2;
+  .Image {
+    height: 18rem;
+    width: 18rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 23rem) {
+  .Gallery {
     grid:
-      'img'
-      'img'
-      'img';
+      'img img'
+      'img img'
+      'img img'
+      'img img'
+      'img img'
+      'img img';
     display: grid;
-    margin: 0.1rem;
+    margin: 0.5rem;
     min-width: fit-content;
-    margin-bottom: 2rem;
-  }
-  .Alcatraz {
-    grid-area: 1 / 1;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .Redwood {
-    grid-area: 2 / 1;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .Fransisco {
-    grid-area: 3 / 1;
-    text-align: center;
-    margin-bottom: 1rem;
   }
 
-  .Ontario {
-    grid-area: 1 / 1;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .Bluffs {
+  .Menu {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     grid-area: 2 / 1;
-    text-align: center;
-    margin-bottom: 1rem;
   }
-  .Toronto {
-    grid-area: 3 / 1;
-    text-align: center;
+
+  #Head,
+  #Head a,
+  #Head a:active {
+    font-size: 4rem;
+    padding: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.7rem;
+  }
+  .Top-Content {
+    grid-area: 3 / 1 / span 2 / span 2;
+    grid:
+      'img img'
+      'img img'
+      'img img';
+    display: grid;
+    min-width: fit-content;
+    margin: 0.1rem;
+  }
+  .Image {
+    height: 13rem;
+    width: 13rem;
     margin-bottom: 1rem;
   }
 }
