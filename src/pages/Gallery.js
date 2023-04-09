@@ -1,14 +1,11 @@
-import '../css/Gallery.css'
-import Images from './../images/PhotoIndex'
+import '../css/Gallery.css';
+import Images from './../images/PhotoIndex';
 
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
-export default function Gallery () {
-  let arr = []
-  let count = 0
-  for (var key of Object.keys(Images)) {
-    arr[count++] = Images[key]
-  }
+export default function Gallery()
+{
+
   return (
     <div className='Gallery'>
       <div className='Menu'>
@@ -18,14 +15,15 @@ export default function Gallery () {
       </div>
 
       <div className='Top-Content'>
-        {arr.map(el => {
+        {Object.keys(Images).map(el =>
+        {
           return (
             <div className='Images'>
-              <img src={el} alt={el} className='Image'></img>
+              <img src={Images[el]} alt={el} className='Image'></img>
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
+  );
 }
