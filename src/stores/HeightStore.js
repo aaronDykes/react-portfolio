@@ -4,6 +4,7 @@ const HeightStore = create(set => ({
   triHeight: null,
   rectHeight: null,
   diHeight: null,
+  another: 1,
 
   setTriHeight: e => {
     set({
