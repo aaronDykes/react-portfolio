@@ -1,27 +1,30 @@
-import '../css/Gallery.css'
-import Images from './../images/PhotoIndex'
+import "../css/Gallery.css";
+import Images from "./../images/PhotoIndex";
 
-import { Link } from 'react-router-dom'
-import { BiAlignLeft } from 'react-icons/bi'
+import { Link } from "react-router-dom";
+import { BiAlignLeft } from "react-icons/bi";
 
-export default function Gallery () {
+function handleImage(Image) {
   return (
-    <div className='Gallery'>
-      <div className='Menu'>
-        <Link to='/' id='Head'>
+    <div key={Image._id} className="Images">
+      <img
+        src={Image.image}
+        loading="lazy"
+        alt={Image.name}
+        className="Image"
+      ></img>
+    </div>
+  );
+}
+export default function Gallery() {
+  return (
+    <div className="Gallery">
+      <div className="Menu">
+        <Link to="/" id="Head">
           <BiAlignLeft />
         </Link>
       </div>
-
-      <div className='Top-Content'>
-        {Object.keys(Images).map(el => {
-          return (
-            <div className='Images'>
-              <img src={Images[el]} alt={el} className='Image'></img>
-            </div>
-          )
-        })}
-      </div>
+      <div className="Top-Content">{Images.map((el) => handleImage(el))}</div>
     </div>
-  )
+  );
 }
