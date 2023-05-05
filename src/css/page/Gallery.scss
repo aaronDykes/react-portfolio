@@ -3,7 +3,7 @@
 #gallery {
   display: flex;
   background-color: $d_grey;
-  justify-content: center;
+  align-content: center;
   min-width: fit-content;
 }
 
@@ -12,28 +12,25 @@
   color: white;
 }
 .photos {
-  margin: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .image {
-  height: 40rem;
-  width: 40rem;
-  margin: 3rem;
+  margin: 2rem;
+  height: 30rem;
+  width: 30rem;
 }
 .g-content-visible {
   flex: 1 1 100%;
   min-height: 100vh;
-  justify-content: center;
 }
 
 .g-content-hidden {
   flex: 1 1 75%;
   min-height: 100vh;
   background-color: $l_grey;
-  justify-content: center;
 }
 
 .g-nav-visible {
