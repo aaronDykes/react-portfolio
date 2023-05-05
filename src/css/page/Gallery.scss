@@ -3,56 +3,37 @@
 #gallery {
   display: flex;
   background-color: $d_grey;
+  justify-content: center;
   min-width: fit-content;
-  justify-content: space-evenly;
-  align-content: center;
 }
 
+.g-icon {
+  font-size: 5rem;
+  color: white;
+}
+.photos {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.image {
+  height: 40rem;
+  width: 40rem;
+  margin: 3rem;
+}
 .g-content-visible {
   flex: 1 1 100%;
   min-height: 100vh;
-
-  .g-icon {
-    font-size: 8rem;
-    color: white;
-  }
-
-  .photos {
-    margin: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .image {
-    height: 40rem;
-    width: 40rem;
-    margin: 3rem;
-  }
+  justify-content: center;
 }
 
 .g-content-hidden {
   flex: 1 1 75%;
   min-height: 100vh;
   background-color: $l_grey;
-
-  .g-icon {
-    font-size: 5rem;
-    color: white;
-  }
-
-  .photos {
-    margin: 5rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .image {
-    height: 50rem;
-    width: 50rem;
-    margin: 3rem;
-  }
+  justify-content: center;
 }
 
 .g-nav-visible {
