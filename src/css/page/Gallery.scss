@@ -1,54 +1,80 @@
 @import "../style.scss";
 
-.Gallery {
-  @include sm_grid_layout;
+#gallery {
+  display: flex;
+  background-color: $d_grey;
+}
 
-  height: fit-content;
-  background-image: linear-gradient(
-    to top left,
-    rgba(57, 57, 57, 0.9),
-    rgba(9, 9, 9, 0.9)
-  );
-  background-size: cover;
-  margin: 0.5rem;
+.g-content-visible {
+  flex: 1 1 100%;
+  min-height: 100vh;
 
-  .Menu {
-    grid-area: 2 / 1;
-    margin-top: 5rem;
-    margin-left: 5rem;
+  .g-icon {
+    font-size: 8rem;
+    color: white;
+  }
 
-    #Head {
-      color: rgb(233, 229, 225);
-      font-weight: bold;
-      padding: 1rem;
-      font-size: 6rem;
-      font-weight: bolder;
-      letter-spacing: 0.7rem;
+  .photos {
+    margin: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .image {
+    height: 90rem;
+    width: 90rem;
+    margin: 3rem;
+  }
+}
 
+.g-content-hidden {
+  flex: 1 1 75%;
+  min-height: 100vh;
+  background-color: $l_grey;
+
+  .g-icon {
+    font-size: 5rem;
+    color: white;
+  }
+
+  .photos {
+    margin: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .image {
+    height: 90rem;
+    width: 90rem;
+    margin: 3rem;
+  }
+}
+
+.g-nav-visible {
+  flex: 1 1 25%;
+  background-color: $d_grey;
+  height: 100vh;
+
+  li {
+    margin: 3rem;
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    color: white;
+    a,
+    a:active {
+      color: white;
       &:hover {
-        color: rgb(254, 254, 254);
-        text-decoration: underline;
+        color: $l_grey;
       }
     }
-  }
-
-  .Top-Content {
-    grid-area: 4 / 1 / span 5 / span 3;
-    @include sm_grid_layout;
-    height: fit-content;
-    min-width: fit-content;
-    text-align: center;
-    margin: 3rem;
-
-    .Image {
-      height: 33rem;
-      width: 33rem;
-      margin-bottom: 2rem;
-      border-style: solid;
-      border-width: 0.1rem;
-      border-radius: 0.4rem;
-      margin-bottom: 4rem;
-      border-color: rgb(254, 254, 254);
+    &:hover {
+      color: $l_grey;
     }
   }
+}
+
+.g-nav-hidden {
+  display: none;
 }
