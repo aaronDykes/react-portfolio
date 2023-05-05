@@ -1,27 +1,22 @@
-import './../css/Header.css'
-import { Link } from 'react-router-dom'
-import { BiAlignLeft } from 'react-icons/bi'
+import { Link } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
 
-export default function Nav () {
+import "../css/component/Nav.scss";
+export default function Nav({ clicked, setClicked }) {
   return (
-    <div className='leftHeader'>
-      <div className='dropdown'>
-        <Link to='/' id='dropBtn'>
-          <BiAlignLeft />
-        </Link>
-        <div className='dropdown-content'>
-          <nav>
-            <ul id='navList'>
-              <li className='dropLinks'>
-                <Link to='/Pattern'>Pattern</Link>{' '}
-              </li>
-              <li className='dropLinks'>
-                <Link to='/Gallery'>Gallery</Link>{' '}
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <div className={`nav ${clicked ? "hidden" : "visible"}`}>
+      <div className="n-item ">
+        <Link to="/Pattern">Pattern</Link>
+      </div>
+      <div className="n-item">
+        <Link to="/Gallery">Gallery</Link>
+      </div>
+      <div className="n-item">
+        <Link to="/">Home</Link>
+      </div>
+      <div className="n-item-1">
+        <GoArrowRight onClick={() => setClicked(!clicked)} />
       </div>
     </div>
-  )
+  );
 }

@@ -1,0 +1,26 @@
+@import "../style.scss";
+
+a,
+a:active {
+  color: $d_grey;
+  &:hover {
+    color: $green;
+  }
+}
+dd {
+  color: $d_grey;
+}
+
+.footer {
+  background-color: $l_grey;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .f-item {
+    flex: 1 1 10%;
+    font-size: 2rem;
+    color: white;
+    margin: 3rem;
+  }
+}

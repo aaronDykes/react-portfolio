@@ -1,0 +1,141 @@
+$d_grey: rgba(48, 48, 48);
+$l_grey: rgba(145, 145, 145);
+$vl_grey: rgba(237, 237, 237);
+
+$orange: rgba(255, 103, 38);
+$l_orange: rgba(255, 110, 82);
+
+$yellow: rgba(255, 197, 82);
+$l_yellow: rgba(252, 228, 179);
+
+$red: rgba(252, 25, 25);
+$l_red: rgba(255, 56, 56);
+
+$blue: rgba(28, 104, 255);
+$l_blue: rgba(50, 101, 201);
+$b_blue: rgba(161, 193, 255);
+
+$purp: rgba(121, 22, 250);
+$l_purp: rgba(173, 138, 255);
+
+$green: rgba(79, 255, 56);
+$d_green: rbga(49, 112, 40);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  @media (max-width: 30rem) {
+    font-size: 30%;
+  }
+
+  @media (max-width: 50rem) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h1:active {
+  font-size: 8rem;
+}
+
+h2,
+h2:active {
+  font-size: 5rem;
+}
+
+@mixin xl_grid_layout {
+  grid:
+    "col col col col col col col"
+    "col col col col col col col"
+    "col col col col col col col"
+    "col col col col col col col"
+    "col col col col col col col"
+    "col col col col col col col"
+    "col col col col col col col"
+    "col col col col col col col";
+  display: grid;
+}
+
+@mixin lg_grid_layout {
+  grid:
+    "col col col col col"
+    "col col col col col"
+    "col col col col col"
+    "col col col col col"
+    "col col col col col"
+    "col col col col col"
+    "col col col col col";
+  display: grid;
+}
+@mixin md_grid_layout {
+  grid:
+    "col col col col"
+    "col col col col"
+    "col col col col"
+    "col col col col"
+    "col col col col"
+    "col col col col"
+    "col col col col"
+    "col col col col"
+    "col col col col";
+  display: grid;
+}
+
+@mixin sm_grid_layout {
+  grid:
+    "col col col"
+    "col col col"
+    "col col col"
+    "col col col"
+    "col col col"
+    "col col col"
+    "col col col"
+    "col col col"
+    "col col col"
+    "col col col"
+    "col col col";
+  display: grid;
+}
+
+@mixin xs_grid_layout {
+  grid:
+    "col col"
+    "col col"
+    "col col"
+    "col col"
+    "col col"
+    "col col"
+    "col col"
+    "col col"
+    "col col"
+    "col col"
+    "col col";
+  display: grid;
+}

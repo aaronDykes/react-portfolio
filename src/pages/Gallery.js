@@ -1,4 +1,4 @@
-import "../css/Gallery.css";
+import "../css/page/Gallery.scss";
 import Images from "./../images/PhotoIndex";
 
 import { Link } from "react-router-dom";
@@ -9,13 +9,14 @@ function handleImage(Image) {
     <div key={Image._id} className="Images">
       <img
         src={Image.image}
-        loading="lazy"
+        loading="eager"
         alt={Image.name}
         className="Image"
       ></img>
     </div>
   );
 }
+
 export default function Gallery() {
   return (
     <div className="Gallery">

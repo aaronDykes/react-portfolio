@@ -1,16 +1,28 @@
-import Header from './../components/Header'
-import Footer from './../components/Footer'
-import '../css/HomePage.css'
+import Footer from "./../components/Footer";
+import "../css/page/Home.scss";
+import Nav from "../components/Nav";
+import { BiAlignLeft } from "react-icons/bi";
+import { useState } from "react";
 
-export default function Home () {
+export default function Home() {
+  const [clicked, setClicked] = useState(false);
   return (
-    <div className='Home'>
-      <Header />
-      <div className='name'>
-        <span className='firstName'>Aaron</span>
-        <span className='lastName'>Dykes</span>
+    <div id="home">
+      <div className={`h-nav-${clicked ? "visible" : "hidden"}`}>
+        <Nav clicked={clicked} setClicked={setClicked} />
       </div>
-      <Footer />
+      <div className={`h-content-${!clicked ? "visible" : "hidden"}`}>
+        <div className="h-icon" onClick={() => setClicked(!clicked)}>
+          <BiAlignLeft />
+        </div>
+        <div className="h-name">
+          <h1 className="h-first">Aaron</h1>
+          <h1 className="h-last">Dykes</h1>
+        </div>
+        <div className="h-foot">
+          <Footer />
+        </div>
+      </div>
     </div>
-  )
+  );
 }

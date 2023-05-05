@@ -1,46 +1,39 @@
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import Triangle from '../components/Triangle'
-import Rectangle from '../components/Rectangle'
-import Diamond from '../components/Diamond'
+import Footer from "../components/Footer";
+import Triangle from "../components/Triangle";
+import Rectangle from "../components/Rectangle";
+import Diamond from "../components/Diamond";
+import Nav from "../components/Nav";
 
-import '../css/Pattern.css'
+import "../css/page/Pattern.scss";
+import { useState } from "react";
+import { BiAlignLeft } from "react-icons/bi";
 
-// function fibonacci (n) {
-//   const [size, setSize] = useState('')
-
-//   let fib = [0, 1]
-
-//   let result = ''
-//   let child = document.createElement('li')
-
-//   for (let i = 1; i <= n; i++) {
-//     fib.push(fib[i] + fib[i - 1])
-//     result[i] += '<li>' + fib[i] + '</li>'
-//     if (i % 4 == 0) result[i] += '\n'
-//   }
-//   let mid = result.split('<li>').map(str => {
-//     '<li>' + str + '</li>'
-//   })
-//   const final = mid.split('\n').map(str => <p>{str} </p>)
-// }
-
-export default function Pattern () {
+export default function Pattern() {
+  const [clicked, setClicked] = useState(false);
   return (
-    <div className='Pattern-Container'>
-      <Header />
-      <div className='Pattern'>
-        <div className='Triangle'>
-          <Triangle />
+    <div id="pattern">
+      <div className={`p-nav-${clicked ? "visible" : "hidden"}`}>
+        <Nav clicked={clicked} setClicked={setClicked} />
+      </div>
+      <div className={`p-content-${!clicked ? "visible" : "hidden"}`}>
+        <div className="p-head" onClick={() => setClicked(!clicked)}>
+          <BiAlignLeft />
         </div>
-        <div className='Diamond'>
-          <Diamond />
+        <div className="patterns">
+          <div className="p-tri">
+            <Triangle />
+          </div>
+          <div className="p-di">
+            <Diamond />
+          </div>
+          <div className="p-rect">
+            <Rectangle />
+          </div>
         </div>
-        <div className='Rectangle'>
-          <Rectangle />
+        <div className="p-foot">
+          <Footer />
         </div>
       </div>
-      <Footer />
     </div>
-  )
+  );
 }

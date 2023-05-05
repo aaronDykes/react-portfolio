@@ -1,26 +1,25 @@
-import { create } from 'zustand'
+import { create } from "zustand";
 
-const HeightStore = create(set => ({
-  triHeight: null,
-  rectHeight: null,
-  diHeight: null,
-  another: 1,
+const HeightStore = create((set) => ({
+  triHeight: "",
+  rectHeight: "",
+  diHeight: "",
 
-  setTriHeight: e => {
+  setTriHeight: (e) => {
     set({
       triHeight: e.target.value
-    })
+    });
   },
-  setRectHeight: e => {
+  setRectHeight: (e) => {
     set({
       rectHeight: e.target.value
-    })
+    });
   },
-  setDiHeight: e => {
+  setDiHeight: (e) => {
     set({
       diHeight: e.target.value
-    })
+    });
   }
-}))
+}));
 
-export default HeightStore
+export default HeightStore;

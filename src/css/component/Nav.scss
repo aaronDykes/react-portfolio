@@ -1,0 +1,33 @@
+@import "../style.scss";
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  background-color: $d_grey;
+
+  .n-item {
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 10%;
+
+    a,
+    a:active {
+      color: white;
+      font-size: 3rem;
+      &:hover {
+        color: $green;
+      }
+    }
+    &-1 {
+      font-size: 5rem;
+      color: white;
+      padding: 1rem;
+      margin: 1rem;
+      flex: 1 1 10%;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
