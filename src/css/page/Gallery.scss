@@ -3,6 +3,9 @@
 #gallery {
   display: flex;
   background-color: $d_grey;
+  min-width: fit-content;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 .g-content-visible {
@@ -15,15 +18,15 @@
   }
 
   .photos {
-    margin: 10rem;
+    margin: 3rem;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .image {
-    height: 50rem;
-    width: 50rem;
+    height: 40rem;
+    width: 40rem;
     margin: 3rem;
   }
 }
@@ -39,7 +42,7 @@
   }
 
   .photos {
-    margin: 10rem;
+    margin: 5rem;
     display: flex;
     justify-content: center;
     flex-direction: row;
