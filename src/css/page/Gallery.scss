@@ -2,14 +2,14 @@
 
 #gallery {
   display: flex;
-  background-color: $d_grey;
+  background-color: $vl_grey;
   align-content: center;
   min-width: fit-content;
 }
 
 .g-icon {
   font-size: 5rem;
-  color: white;
+  color: $d_grey;
 }
 .photos {
   display: flex;
@@ -30,13 +30,12 @@
 .g-content-hidden {
   flex: 1 1 75%;
   min-height: 100vh;
-  background-color: $l_grey;
 }
 
 .g-nav-visible {
   flex: 1 1 25%;
   background-color: $d_grey;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .g-nav-hidden {
