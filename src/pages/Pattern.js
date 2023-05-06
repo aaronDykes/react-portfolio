@@ -23,11 +23,11 @@ export default function Pattern() {
           <div className="p-tri">
             <Triangle />
           </div>
-          <div className="p-di">
-            <Diamond />
-          </div>
           <div className="p-rect">
             <Rectangle />
+          </div>
+          <div className="p-di">
+            <Diamond />
           </div>
         </div>
         <div className="p-foot">
