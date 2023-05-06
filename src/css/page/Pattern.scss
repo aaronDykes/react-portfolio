@@ -17,7 +17,7 @@ p {
 }
 #pattern {
   display: flex;
-  width: 100%;
+  min-width: fit-content;
   min-height: fit-content;
   justify-content: stretch;
   background-color: rgb(230, 222, 213);
