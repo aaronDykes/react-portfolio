@@ -12,26 +12,26 @@
   font-size: 5rem;
 }
 
+.h-name {
+  text-align: center;
+  font-weight: bold;
+  margin: 5rem;
+  color: rgb(63, 63, 63);
+
+  .h-first {
+    animation: slideInRight 2s ease-out;
+  }
+  .h-last {
+    animation: slideInLeft 2s ease-out;
+  }
+}
 .h-content-visible {
   flex: 1 1 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 150vh;
-  .h-name {
-    text-align: center;
-    font-weight: bold;
-    margin: 5rem;
-    color: rgb(63, 63, 63);
-
-    .h-first {
-      animation: slideInRight 2s ease-out;
-    }
-    .h-last {
-      animation: slideInLeft 2s ease-out;
-    }
-  }
+  min-height: 150vh;
 }
 
 .h-content-hidden {
@@ -41,27 +41,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 150vh;
-
-  .h-name {
-    text-align: center;
-    font-weight: bold;
-    margin: 5rem;
-    color: rgb(63, 63, 63);
-
-    .h-first {
-      animation: slideInRight 2s ease-out;
-    }
-    .h-last {
-      animation: slideInLeft 2s ease-out;
-    }
-  }
+  min-height: 150vh;
 }
 
 .h-nav-visible {
   flex: 1 1 25%;
   background-color: $d_grey;
-  height: 150vh;
+  min-height: 150vh;
 }
 .h-nav-hidden {
   display: none;
