@@ -5,7 +5,10 @@ import "../css/component/Nav.scss";
 export default function Nav({ clicked, setClicked }) {
   return (
     <div className={`nav ${clicked ? "hidden" : "visible"}`}>
-      <div className="n-item ">
+      <div className="n-item-1">
+        <GoArrowRight onClick={() => setClicked(!clicked)} />
+      </div>
+      <div className="n-item">
         <Link to="/Pattern">Pattern</Link>
       </div>
       <div className="n-item">
@@ -13,9 +16,6 @@ export default function Nav({ clicked, setClicked }) {
       </div>
       <div className="n-item">
         <Link to="/">Home</Link>
-      </div>
-      <div className="n-item-1">
-        <GoArrowRight onClick={() => setClicked(!clicked)} />
       </div>
     </div>
   );

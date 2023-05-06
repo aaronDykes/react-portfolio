@@ -22,58 +22,45 @@ p {
   justify-content: stretch;
   background-color: rgb(230, 222, 213);
 }
+.p-head {
+  font-size: 5rem;
+}
+.patterns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .p-tri {
+    margin: 2rem;
+  }
+  .p-rect {
+    margin: 2rem;
+  }
+
+  .p-di {
+    margin: 2rem;
+  }
+}
 
 .p-content-visible {
   flex: 1 1 100%;
-  min-height: 100vh;
+  min-height: 150vh;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  .patterns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
 }
 .p-content-hidden {
   flex: 1 1 75%;
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  .p-head {
-    font-size: 5rem;
-  }
-  .patterns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
 }
 
 .p-nav-visible {
   flex: 1 1 25%;
   background-color: $d_grey;
-  min-height: 100vh;
-
-  li {
-    margin: 3rem;
-    margin-bottom: 2rem;
-    font-size: 6rem;
-    color: white;
-    a,
-    a:active {
-      color: white;
-      &:hover {
-        color: $l_grey;
-      }
-    }
-    &:hover {
-      color: $l_grey;
-    }
-  }
+  min-height: 150vh;
 }
 
 .p-nav-hidden {

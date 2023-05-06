@@ -37,23 +37,6 @@
   flex: 1 1 25%;
   background-color: $d_grey;
   height: 100vh;
-
-  li {
-    margin: 3rem;
-    margin-bottom: 2rem;
-    font-size: 6rem;
-    color: white;
-    a,
-    a:active {
-      color: white;
-      &:hover {
-        color: $l_grey;
-      }
-    }
-    &:hover {
-      color: $l_grey;
-    }
-  }
 }
 
 .g-nav-hidden {

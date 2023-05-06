@@ -5,6 +5,11 @@
 
   justify-content: stretch;
   background-color: rgb(230, 222, 213);
+  min-width: fit-content;
+}
+
+.h-icon {
+  font-size: 5rem;
 }
 
 .h-content-visible {
@@ -13,17 +18,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-
-  .h-icon {
-    font-size: 5rem;
-  }
-
+  height: 150vh;
   .h-name {
     text-align: center;
-    min-width: fit-content;
-
     font-weight: bold;
+    margin: 5rem;
     color: rgb(63, 63, 63);
 
     .h-first {
@@ -42,16 +41,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
-
-  .h-icon {
-    font-size: 5rem;
-  }
+  height: 150vh;
 
   .h-name {
     text-align: center;
-
     font-weight: bold;
+    margin: 5rem;
     color: rgb(63, 63, 63);
 
     .h-first {
@@ -66,24 +61,7 @@
 .h-nav-visible {
   flex: 1 1 25%;
   background-color: $d_grey;
-  height: 100vh;
-
-  li {
-    margin: 3rem;
-    margin-bottom: 2rem;
-    font-size: 6rem;
-    color: white;
-    a,
-    a:active {
-      color: white;
-      &:hover {
-        color: $l_grey;
-      }
-    }
-    &:hover {
-      color: $l_grey;
-    }
-  }
+  height: 150vh;
 }
 .h-nav-hidden {
   display: none;
