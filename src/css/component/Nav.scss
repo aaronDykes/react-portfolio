@@ -3,7 +3,7 @@
 .nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-start;
   background-color: $d_grey;
   padding: 3rem;
   margin-right: 3rem;
@@ -13,21 +13,25 @@
     margin: 1rem;
     flex: 1 1 100%;
 
+    button,
+    button:active {
+      background-color: $l_grey;
+      color: white;
+      padding: 3rem;
+      border-radius: 1rem;
+      border-style: none;
+      font-size: 6rem;
+      &:hover {
+        background-color: $d_grey;
+      }
+    }
     a,
     a:active {
       color: white;
       font-size: 3rem;
+      font-weight: bold;
       &:hover {
-        color: $l_yellow;
-      }
-    }
-    &-1 {
-      font-size: 8rem;
-      color: white;
-      margin-left: 1rem;
-      flex: 1 1 10%;
-      &:hover {
-        color: $l_yellow;
+        color: $l_grey;
       }
     }
   }

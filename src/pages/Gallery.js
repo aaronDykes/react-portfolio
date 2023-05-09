@@ -19,6 +19,7 @@ function handleImage(Image) {
 
 export default function Gallery() {
   const [clicked, setClicked] = useState(false);
+
   return (
     <div id="gallery">
       <div className={`g-nav-${clicked ? "visible" : "hidden"}`}>
