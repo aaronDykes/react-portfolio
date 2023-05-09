@@ -22,21 +22,12 @@ p {
   justify-content: stretch;
   background-color: rgb(230, 222, 213);
 }
-.p-head {
-  font-size: 5rem;
-}
+
 .patterns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  .p-tri {
-    margin: 2rem;
-  }
-  .p-rect {
-    margin: 2rem;
-  }
-
-  .p-di {
+  .pat {
     margin: 2rem;
   }
 }
@@ -44,7 +35,6 @@ p {
 .p-content-visible {
   flex: 1 1 100%;
   min-height: 150vh;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -20,13 +20,13 @@ export default function Pattern() {
           <BiAlignLeft />
         </div>
         <div className="patterns">
-          <div className="p-tri">
+          <div className="pat">
             <Triangle />
           </div>
-          <div className="p-rect">
+          <div className="pat">
             <Rectangle />
           </div>
-          <div className="p-di">
+          <div className="pat">
             <Diamond />
           </div>
         </div>

@@ -2,7 +2,6 @@
 
 #home {
   display: flex;
-
   justify-content: stretch;
   background-color: rgb(230, 222, 213);
   min-width: fit-content;
@@ -27,7 +26,6 @@
 }
 .h-content-visible {
   flex: 1 1 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,8 +34,6 @@
 
 .h-content-hidden {
   flex: 1 1 75%;
-  justify-content: space-between;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
