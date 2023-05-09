@@ -4,7 +4,9 @@ function LeftDescription() {
   return (
     <dl>
       <dt>email</dt>
-      <dd>aaron.dykes99@gmail.com</dd>
+      <dd>
+        <a href="mailto:aaron.dykes99@gmail.com">mail</a>
+      </dd>
       <br />
       <dt>phone</dt>
       <dd>613-447-7909</dd>
