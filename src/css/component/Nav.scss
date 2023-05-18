@@ -5,22 +5,25 @@
   flex-direction: column;
   align-items: flex-start;
   background-color: $d_grey;
-  padding: 3rem;
-  margin-right: 3rem;
+  padding: 1rem;
+  margin-left: 1rem;
 
   .n-item {
     padding: 1rem;
     margin: 1rem;
-    flex: 1 1 100%;
+
+    flex: 1 1 10%;
 
     button,
     button:active {
-      background-color: $l_grey;
+      background-color: $m_grey;
       color: white;
-      padding: 3rem;
-      border-radius: 1rem;
+      padding: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      border-radius: 3rem;
       border-style: none;
-      font-size: 6rem;
+      font-size: 7rem;
       &:hover {
         background-color: $d_grey;
       }
