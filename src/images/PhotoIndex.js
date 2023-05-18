@@ -11,42 +11,50 @@ const Images = [
   {
     _id: 1,
     image: Red,
-    name: "Red"
+    name: "Red",
+    dimension: 300
   },
   {
     _id: 2,
     image: Alc,
-    name: "Alc"
+    name: "Alc",
+    dimension: 300
   },
   {
     _id: 3,
     image: SanSky,
-    name: "SanSky"
+    name: "SanSky",
+    dimension: 300
   },
   {
     _id: 4,
     image: SanFran,
-    name: "SanFran"
+    name: "SanFran",
+    dimension: 300
   },
   {
     _id: 5,
     image: SanSun,
-    name: "SanSun"
+    name: "SanSun",
+    dimension: 300
   },
   {
     _id: 6,
     image: Tor,
-    name: "Tor"
+    name: "Tor",
+    dimension: 300
   },
   {
     _id: 7,
     image: Bluffs,
-    name: "Bluffs"
+    name: "Bluffs",
+    dimension: 300
   },
   {
     _id: 8,
     image: Ontario,
-    name: "Ontario"
+    name: "Ontario",
+    dimension: 300
   }
 ];
 
