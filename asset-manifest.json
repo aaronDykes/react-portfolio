@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.618a782e.css",
-    "main.js": "/react-portfolio/static/js/main.e0cf3b00.js",
-    "static/media/Tree.png": "/react-portfolio/static/media/Tree.06cde1b73282ccf6071f.png",
-    "static/media/Ontario.png": "/react-portfolio/static/media/Ontario.24c6e50e573ca7b07beb.png",
-    "static/media/Bluffs.png": "/react-portfolio/static/media/Bluffs.f5eb379bba69af41d1f5.png",
-    "static/media/SanSky.png": "/react-portfolio/static/media/SanSky.c9a33f2aaa990b160078.png",
-    "static/media/SanSun.png": "/react-portfolio/static/media/SanSun.cbe4e01b423f0833af66.png",
-    "static/media/Ocean.png": "/react-portfolio/static/media/Ocean.f48a7678a14ec28915bb.png",
-    "static/media/SanFran.png": "/react-portfolio/static/media/SanFran.afd516c77597863bb751.png",
-    "static/media/Alcatraz.png": "/react-portfolio/static/media/Alcatraz.8a764c21e0e7c046af22.png",
+    "main.css": "/react-portfolio/static/css/main.e7da50ac.css",
+    "main.js": "/react-portfolio/static/js/main.29bd021b.js",
+    "static/media/IMG_3785.JPG": "/react-portfolio/static/media/IMG_3785.5b961b3148bb98c9436b.JPG",
+    "static/media/Lisa.JPG": "/react-portfolio/static/media/Lisa.219c8cf7fc7e3978083e.JPG",
+    "static/media/IMG_3783.JPG": "/react-portfolio/static/media/IMG_3783.b663420e727bc82ba0e3.JPG",
+    "static/media/IMG_3784.JPG": "/react-portfolio/static/media/IMG_3784.11389ac4e37002b916a8.JPG",
+    "static/media/Baby.JPG": "/react-portfolio/static/media/Baby.bd2f8f62b2a2adfbe954.JPG",
     "index.html": "/react-portfolio/index.html",
-    "main.618a782e.css.map": "/react-portfolio/static/css/main.618a782e.css.map",
-    "main.e0cf3b00.js.map": "/react-portfolio/static/js/main.e0cf3b00.js.map"
+    "main.e7da50ac.css.map": "/react-portfolio/static/css/main.e7da50ac.css.map",
+    "main.29bd021b.js.map": "/react-portfolio/static/js/main.29bd021b.js.map"
   },
   "entrypoints": [
-    "static/css/main.618a782e.css",
-    "static/js/main.e0cf3b00.js"
+    "static/css/main.e7da50ac.css",
+    "static/js/main.29bd021b.js"
   ]
 }
