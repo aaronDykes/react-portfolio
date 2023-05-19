@@ -14,8 +14,6 @@ const HandleImage = ({ scrollPosition }) => {
           src={el.image}
           key={el.name}
           threshold={100}
-          height={el.dimension}
-          width={el.dimension}
           scrollPosition={scrollPosition}
           effect="blur"
         />

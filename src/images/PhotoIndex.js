@@ -1,60 +1,35 @@
-import Red from "./Tree.png";
-import Alc from "./Alcatraz.png";
-import SanSky from "./SanSky.png";
-import SanFran from "./SanFran.png";
-import SanSun from "./SanSun.png";
-import Tor from "./Ocean.png";
-import Bluffs from "./Bluffs.png";
-import Ontario from "./Ontario.png";
+import Baby from "./Baby.JPG";
+import Img3 from "./IMG_3783.JPG";
+import Img4 from "./IMG_3784.JPG";
+import Img5 from "./IMG_3785.JPG";
+import Lisa from "./Lisa.JPG";
 
 const Images = [
   {
     _id: 1,
-    image: Red,
-    name: "Red",
-    dimension: 300
+    image: Lisa,
+    name: "lisa"
   },
+
   {
     _id: 2,
-    image: Alc,
-    name: "Alc",
-    dimension: 300
+    image: Img3,
+    name: "img3"
   },
   {
     _id: 3,
-    image: SanSky,
-    name: "SanSky",
-    dimension: 300
+    image: Img4,
+    name: "img4"
   },
   {
     _id: 4,
-    image: SanFran,
-    name: "SanFran",
-    dimension: 300
+    image: Img5,
+    name: "img5"
   },
   {
     _id: 5,
-    image: SanSun,
-    name: "SanSun",
-    dimension: 300
-  },
-  {
-    _id: 6,
-    image: Tor,
-    name: "Tor",
-    dimension: 300
-  },
-  {
-    _id: 7,
-    image: Bluffs,
-    name: "Bluffs",
-    dimension: 300
-  },
-  {
-    _id: 8,
-    image: Ontario,
-    name: "Ontario",
-    dimension: 300
+    image: Baby,
+    name: "baby"
   }
 ];
 
