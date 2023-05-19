@@ -3,16 +3,15 @@
 .nav {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: left;
   background-color: $d_grey;
-  padding: 1rem;
-  margin-left: 3rem;
+  padding: 2rem;
 
   .n-item {
     padding: 1rem;
     margin: 1rem;
 
-    flex: 1 1 10%;
+    flex: 1 1 100%;
 
     button,
     button:active {
