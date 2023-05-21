@@ -1,12 +1,15 @@
 import "../css/page/Gallery.scss";
-import {
+import
+{
   LazyLoadImage,
   trackWindowScroll
 } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const HandleImage = ({ images, scrollPosition }) => {
-  return images.map((el) => {
+const HandleImage = ({ images, scrollPosition }) =>
+{
+  const Photos = images.map((el) =>
+  {
     return (
       <div className="image" key={el.name}>
         <LazyLoadImage
@@ -19,6 +22,7 @@ const HandleImage = ({ images, scrollPosition }) => {
       </div>
     );
   });
+  return Photos;
 };
 
 export default trackWindowScroll(HandleImage);
