@@ -10,14 +10,17 @@ export default function Home() {
       <div className={`h-nav-${clicked ? "visible" : "hidden"}`}>
         <Nav clicked={clicked} setClicked={setClicked} />
       </div>
+
       <div className={`h-content-${!clicked ? "visible" : "hidden"}`}>
         <div className="h-icon" onClick={() => setClicked(!clicked)}>
           <BiAlignLeft />
         </div>
+
         <div className="h-name">
           <h1 className="h-first">Aaron</h1>
           <h1 className="h-last">Dykes</h1>
         </div>
+
         <footer />
         <footer />
       </div>

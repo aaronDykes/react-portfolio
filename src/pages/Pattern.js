@@ -9,15 +9,18 @@ import { BiAlignLeft } from "react-icons/bi";
 
 export default function Pattern() {
   const [clicked, setClicked] = useState(false);
+
   return (
     <div id="pattern">
       <div className={`p-nav-${clicked ? "visible" : "hidden"}`}>
         <Nav clicked={clicked} setClicked={setClicked} />
       </div>
+
       <div className={`p-content-${!clicked ? "visible" : "hidden"}`}>
         <div className="p-head" onClick={() => setClicked(!clicked)}>
           <BiAlignLeft />
         </div>
+
         <div className="patterns">
           <div className="pat">
             <Triangle />
@@ -29,6 +32,7 @@ export default function Pattern() {
             <Diamond />
           </div>
         </div>
+
         <footer />
         <footer />
       </div>
