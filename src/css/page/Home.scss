@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 150vh;
+  min-height: 100vh;
 }
 
 .h-content-hidden {
@@ -38,13 +38,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 150vh;
+  min-height: 100vh;
 }
 
 .h-nav-visible {
   flex: 1 1 25%;
   background-color: white;
-  min-height: 150vh;
+  min-height: 100vh;
 }
 .h-nav-hidden {
   display: none;

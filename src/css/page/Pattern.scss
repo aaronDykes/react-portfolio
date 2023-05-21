@@ -35,14 +35,14 @@ p {
 
 .p-content-visible {
   flex: 1 1 100%;
-  min-height: 150vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .p-content-hidden {
   flex: 1 1 75%;
-  min-height: 150vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +51,7 @@ p {
 .p-nav-visible {
   flex: 1 1 25%;
   background-color: white;
-  min-height: 150vh;
+  min-height: 100vh;
 }
 
 .p-nav-hidden {
