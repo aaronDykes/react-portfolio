@@ -3,28 +3,27 @@
 #gallery {
   display: flex;
   background-color: $vl_grey;
-  align-content: center;
   min-width: fit-content;
 }
 
 .g-icon {
-  font-size: 5rem;
+  font-size: 7rem;
   color: $d_grey;
 }
 .photos {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 .image {
   margin: 2rem;
-  /*  height: 30rem;
-  width: 30rem;*/
 }
 .g-content-visible {
   flex: 1 1 100%;
   min-height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .g-content-hidden {
@@ -34,7 +33,7 @@
 
 .g-nav-visible {
   flex: 1 1 25%;
-  background-color: $d_grey;
+  background-color: white;
   min-height: 100vh;
 }
 
@@ -44,7 +43,7 @@
 
 @media (max-width: 80rem) {
   img {
-    height: 100%;
     width: 100%;
+    height: 100%;
   }
 }

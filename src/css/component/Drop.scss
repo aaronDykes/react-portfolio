@@ -1,0 +1,29 @@
+@import "../style.scss";
+
+.drop-content-visible {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .page {
+    padding: 1rem;
+    margin-left: 1rem;
+
+    a,
+    a:active {
+      color: $m_grey;
+      font-size: 2rem;
+      font-weight: bold;
+      &:hover {
+        color: $d_grey;
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: $m_grey;
+    }
+  }
+}
+.drop-content-hidden {
+  display: none;
+}

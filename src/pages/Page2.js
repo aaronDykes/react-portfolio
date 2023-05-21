@@ -1,10 +1,12 @@
 import "../css/page/Gallery.scss";
-import Photos from "../components/Photos";
 import { BiAlignLeft } from "react-icons/bi";
 import Nav from "../components/Nav";
 import { useState } from "react";
 
-export default function Gallery() {
+import Photos from "../components/Photos";
+import Images from "../images/Index1";
+
+export default function Page1() {
   const [clicked, setClicked] = useState(false);
 
   return (
@@ -17,7 +19,7 @@ export default function Gallery() {
           <BiAlignLeft />
         </div>
         <div className="photos">
-          <Photos />
+          <Photos images={Images} />
         </div>
       </div>
     </div>

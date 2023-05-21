@@ -1,4 +1,3 @@
-import Footer from "./../components/Footer";
 import "../css/page/Home.scss";
 import Nav from "../components/Nav";
 import { BiAlignLeft } from "react-icons/bi";
@@ -19,9 +18,8 @@ export default function Home() {
           <h1 className="h-first">Aaron</h1>
           <h1 className="h-last">Dykes</h1>
         </div>
-        <div className="h-foot">
-          <Footer />
-        </div>
+        <footer />
+        <footer />
       </div>
     </div>
   );

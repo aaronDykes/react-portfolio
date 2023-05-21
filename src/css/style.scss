@@ -1,25 +1,22 @@
 $d_grey: rgba(48, 48, 48);
 $m_grey: rgba(74, 74, 74, 0.8);
 $l_grey: rgba(145, 145, 145);
-$vl_grey: rgba(237, 237, 237);
+$vl_grey: rgba(245, 245, 245);
 $orange: rgba(255, 103, 38);
-$l_orange: rgba(255, 110, 82);
+$l_orange: rgba(255, 149, 117);
 
 $yellow: rgba(255, 197, 82);
 $l_yellow: rgba(252, 228, 179);
 
-$red: rgba(252, 25, 25);
-$l_red: rgba(255, 56, 56);
+$l_pink: rgba(255, 133, 241);
+$pink: rgba(237, 26, 153, 0.9);
 
-$blue: rgba(28, 104, 255);
+$red: rgba(252, 25, 25);
 $l_blue: rgba(50, 101, 201);
 $b_blue: rgba(161, 193, 255);
 
 $purp: rgba(121, 22, 250);
 $l_purp: rgba(173, 138, 255);
-
-$green: rgba(79, 255, 56);
-$d_green: rbga(49, 112, 40);
 
 *,
 *::before,
@@ -31,12 +28,9 @@ $d_green: rbga(49, 112, 40);
 
 html {
   font-size: 62.5%;
-  @media (max-width: 30rem) {
-    font-size: 30%;
-  }
 
-  @media (max-width: 50rem) {
-    font-size: 50%;
+  @media (max-width: 45rem) {
+    font-size: 40%;
   }
 }
 
@@ -53,18 +47,15 @@ li {
   text-decoration: none;
   font-size: 3rem;
 }
-
 a,
 a:active,
 a:hover {
   text-decoration: none;
 }
-
 h1,
 h1:active {
   font-size: 8rem;
 }
-
 h2,
 h2:active {
   font-size: 5rem;

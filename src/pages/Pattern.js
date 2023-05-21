@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import Triangle from "../components/Triangle";
 import Rectangle from "../components/Rectangle";
 import Diamond from "../components/Diamond";
@@ -30,9 +29,8 @@ export default function Pattern() {
             <Diamond />
           </div>
         </div>
-        <div className="p-foot">
-          <Footer />
-        </div>
+        <footer />
+        <footer />
       </div>
     </div>
   );

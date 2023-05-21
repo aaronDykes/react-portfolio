@@ -3,19 +3,20 @@
 #home {
   display: flex;
   justify-content: stretch;
-  background-color: rgb(230, 222, 213);
+  background-color: $l_orange;
   min-width: fit-content;
 }
 
 .h-icon {
-  font-size: 5rem;
+  font-size: 6rem;
+  color: white;
 }
 
 .h-name {
   text-align: center;
   font-weight: bold;
   margin: 5rem;
-  color: rgb(63, 63, 63);
+  color: white;
 
   .h-first {
     animation: slideInRight 2s ease-out;
@@ -42,7 +43,7 @@
 
 .h-nav-visible {
   flex: 1 1 25%;
-  background-color: $d_grey;
+  background-color: white;
   min-height: 150vh;
 }
 .h-nav-hidden {

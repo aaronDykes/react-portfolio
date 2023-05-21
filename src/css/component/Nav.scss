@@ -3,37 +3,50 @@
 .nav {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  background-color: $d_grey;
+  align-items: flex-start;
+  background-color: white;
   padding: 2rem;
+  margin: 1rem;
+
+  .gallery {
+    display: flex;
+    align-items: center;
+
+    .drop-btn {
+      color: $m_grey;
+      border-style: none;
+      font-size: 5rem;
+    }
+    .vertical {
+      transform: rotate(-90deg);
+    }
+  }
 
   .n-item {
-    padding: 1rem;
     margin: 1rem;
 
     flex: 1 1 100%;
+    display: flex;
 
-    button,
-    button:active {
-      background-color: $m_grey;
-      color: white;
-      padding: 1rem;
-      padding-left: 3rem;
-      padding-right: 3rem;
-      border-radius: 3rem;
+    button#menu-btn,
+    button#menu-btn:active {
+      background-color: white;
+      color: $m_grey;
+      border-radius: 1rem;
       border-style: none;
-      font-size: 7rem;
+      font-size: 9rem;
+      font-weight: bold;
       &:hover {
-        background-color: $d_grey;
+        color: $d_grey;
       }
     }
     a,
     a:active {
-      color: white;
+      color: $m_grey;
       font-size: 3rem;
       font-weight: bold;
       &:hover {
-        color: $l_grey;
+        color: $d_grey;
       }
     }
   }
