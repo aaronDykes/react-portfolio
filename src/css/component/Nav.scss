@@ -16,6 +16,9 @@
       color: $m_grey;
       border-style: none;
       font-size: 5rem;
+      &:hover {
+        color: $d_grey;
+      }
     }
     .vertical {
       transform: rotate(-90deg);

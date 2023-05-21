@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [clicked, setClicked] = useState(false);
+
   return (
     <div id="home">
       <div className={`h-nav-${clicked ? "visible" : "hidden"}`}>
