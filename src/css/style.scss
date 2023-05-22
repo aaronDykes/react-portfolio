@@ -62,9 +62,10 @@ h1,
 h1:active {
   font-size: 8rem;
 }
-@mixin flex($direction, $justify: "", $color: "", $wrap: "") {
+@mixin flex($direction, $justify: "", $color: "", $wrap: "", $align: "") {
   display: flex;
   justify-content: $justify;
+  align-items: $align;
   flex-direction: $direction;
   background-color: $color;
   min-width: fit-content;
