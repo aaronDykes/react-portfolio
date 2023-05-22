@@ -1,10 +1,7 @@
 @import "../style.scss";
 
 .nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: white;
+  @include flex(column, stretch, white, "");
   padding: 2rem;
   margin: 1rem;
 
@@ -13,12 +10,7 @@
     align-items: center;
 
     .drop-btn {
-      color: $m_grey;
-      border-style: none;
-      font-size: 5rem;
-      &:hover {
-        color: $d_grey;
-      }
+      @include textDecoration(5rem, bold);
     }
     .vertical {
       transform: rotate(-90deg);
@@ -27,30 +19,11 @@
 
   .n-item {
     margin: 1rem;
-
     flex: 1 1 100%;
     display: flex;
-
-    button#menu-btn,
-    button#menu-btn:active {
-      background-color: white;
-      color: $m_grey;
-      border-radius: 1rem;
-      border-style: none;
-      font-size: 9rem;
-      font-weight: bold;
-      &:hover {
-        color: $d_grey;
-      }
-    }
-    a,
-    a:active {
-      color: $m_grey;
-      font-size: 3rem;
-      font-weight: bold;
-      &:hover {
-        color: $d_grey;
-      }
-    }
   }
+}
+#menu,
+#menu:active {
+  @include textDecoration(9rem, bold);
 }

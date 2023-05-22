@@ -39,24 +39,48 @@ body {
   font-size: 1rem;
   box-sizing: border-box;
 }
+@mixin textDecoration($size, $weight) {
+  color: $m_grey;
+  font-size: $size;
+  font-weight: $weight;
+  &:hover {
+    color: $d_grey;
+  }
+}
 
-ul,
-ol,
-li {
-  list-style: none;
-  text-decoration: none;
-  font-size: 3rem;
-}
 a,
-a:active,
-a:hover {
+a:active {
   text-decoration: none;
+  @include textDecoration(3rem, bold);
+
+  &:hover {
+    text-decoration: none;
+  }
 }
+
 h1,
 h1:active {
   font-size: 8rem;
 }
-h2,
-h2:active {
-  font-size: 5rem;
+@mixin flex($direction, $justify: "", $color: "", $wrap: "") {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  background-color: $color;
+  min-width: fit-content;
+}
+
+@mixin flexChild($flex, $direction, $justify) {
+  flex: $flex;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  min-height: 100vh;
+}
+
+@mixin flexContent($flex, $align: "", $color: "") {
+  flex: $flex;
+  align-items: $align;
+  background-color: $color;
+  min-height: 100vh;
 }

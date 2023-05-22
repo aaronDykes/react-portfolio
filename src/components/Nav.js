@@ -13,12 +13,9 @@ export default function Nav({ clicked, setClicked }) {
 
   return (
     <div className={`nav ${clicked ? "hidden" : "visible"}`}>
-      <div className="n-item">
-        <button id="menu-btn" onClick={() => setClicked(!clicked)}>
-          <IoReturnDownForward id="menu" />
-        </button>
+      <div id="menu" onClick={() => setClicked(!clicked)}>
+        <IoReturnDownForward />
       </div>
-
       <div className="n-item">
         <Link to="/">home</Link>
       </div>
@@ -28,23 +25,19 @@ export default function Nav({ clicked, setClicked }) {
       </div>
 
       <div className="n-item gallery">
-        <Link onClick={() => setVertical(!vert)} id="drop">
-          gallery
-        </Link>
+        <Link onClick={() => setVertical(!vert)}>gallery</Link>
         <RiArrowDownSLine
           onClick={() => setVertical(!vert)}
-          className={`drop-btn ${!vert ? "vertical" : "horizontal"}`}
+          className={`drop-btn ${!vert ? "vertical" : ""}`}
         />
       </div>
       <Drop vert={vert} />
 
       <div className="n-item gallery">
-        <Link onClick={() => setContact(!contact)} id="drop">
-          contact
-        </Link>
+        <Link onClick={() => setContact(!contact)}>contact</Link>
         <RiArrowDownSLine
           onClick={() => setContact(!contact)}
-          className={`drop-btn ${!contact ? "vertical" : "horizontal"}`}
+          className={`drop-btn ${!contact ? "vertical" : ""}`}
         />
       </div>
       <Contact contact={contact} />
