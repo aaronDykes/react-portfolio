@@ -7,7 +7,8 @@ import { useState } from "react";
 import Drop from "./Drop";
 import Contact from "./Contact";
 
-export default function Nav({ clicked, setClicked }) {
+export default function Nav({ clicked, setClicked })
+{
   const [vert, setVertical] = useState(false);
   const [contact, setContact] = useState(false);
 

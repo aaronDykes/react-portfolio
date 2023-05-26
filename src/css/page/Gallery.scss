@@ -1,7 +1,7 @@
 @import "../style.scss";
 
 #gallery {
-  @include flex("", "", $vl_grey);
+  @include flex(0, 0, $vl_grey, 0, 0);
 }
 
 .g-icon {
@@ -9,31 +9,27 @@
   color: $d_grey;
 }
 .photos {
-  @include flex(column, "", "", "", center);
-}
-
-.image {
-  margin: 2rem;
-}
-.g-content-visible {
-  @include flexContent(1 1 100%);
-}
-
-.g-content-hidden {
-  @include flexContent(1 1 75%);
-}
-
-.g-nav-visible {
-  @include flexContent(1 1 25%, "", white);
-}
-
-.g-nav-hidden {
-  display: none;
-}
-
-@media (max-width: 80rem) {
+  @include flex(column, 0, 0, wrap, center);
   img {
     width: 100%;
     height: 100%;
   }
+}
+.image {
+  margin: 2rem;
+}
+.g-content-visible {
+  @include flexChild(1 1 100%, column, 0, 0, 0);
+}
+
+.g-content-hidden {
+  @include flexChild(1 1 75%, column, 0, 0, 0);
+}
+
+.g-nav-visible {
+  @include flexChild(1 1 25%, column, 0, 0, white);
+}
+
+.g-nav-hidden {
+  display: none;
 }

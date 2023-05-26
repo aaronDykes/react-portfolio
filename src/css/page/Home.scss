@@ -1,8 +1,11 @@
 @import "../style.scss";
 
+
+
 #home {
-  @include flex(row, stretch, $l_orange);
+  @include flex(0, stretch, $l_orange);
 }
+
 
 .h-icon {
   font-size: 6rem;
@@ -10,8 +13,8 @@
 }
 
 .h-name {
+  @include txtDecoration(5rem, bold);
   text-align: center;
-  font-weight: bold;
   margin: 5rem;
   color: white;
 
@@ -23,15 +26,15 @@
   }
 }
 .h-content-visible {
-  @include flexChild(1 1 100%, column, space-between);
+  @include flexChild(1 1 100%, column, space-between, 0, $l_orange);
 }
 
 .h-content-hidden {
-  @include flexChild(1 1 100%, column, space-between);
+  @include flexChild(1 1 100%, column, space-between, 0, $l_orange);
 }
 
 .h-nav-visible {
-  @include flexContent(1 1 25%, "", white);
+  @include flexChild(1 1 25%, column);
 }
 .h-nav-hidden {
   display: none;

@@ -1,30 +1,26 @@
 @import "../style.scss";
 
 input {
+  @include txtDecoration(2rem, 0);
   border-radius: 2rem;
   border-style: none;
   padding: 2rem;
-  font-family: inherit;
-  font-size: 2rem;
   margin: 1rem;
 }
-
 p {
   font-size: 2rem;
 }
+
 .p-head {
   font-size: 6rem;
   color: white;
 }
 #pattern {
-  @include flex("", stretch, $m_grey);
+  @include flex(0, stretch, 0, 0, 0);
 }
 
 .patterns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
+  @include flex(0, space-evenly, 0, wrap,  0);
   .pat {
     margin: 2rem;
   }
@@ -32,14 +28,16 @@ p {
 
 .p-content-visible {
   @include flexChild(1 1 100%, column, space-between);
+  background-color: $m_grey;
 }
 
 .p-content-hidden {
   @include flexChild(1 1 75%, column, space-between);
+  background-color: $m_grey;
 }
 
 .p-nav-visible {
-  @include flexContent(1 1 25%, "", white);
+  @include flexChild(1 1 25%, column);
 }
 
 .p-nav-hidden {

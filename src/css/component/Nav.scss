@@ -1,16 +1,19 @@
 @import "../style.scss";
 
 .nav {
-  @include flex(column, stretch, white, "");
+  @include flex(column, 0, white);
   padding: 2rem;
   margin: 1rem;
 
+  #menu,
+  #menu:active {
+    @include linkDecoration(9rem, bold);
+  }
   .gallery {
-    display: flex;
-    align-items: center;
+    @include flex(0, 0, 0, 0, center);
 
     .drop-btn {
-      @include textDecoration(5rem, bold);
+      @include linkDecoration(5rem, bold);
     }
     .vertical {
       transform: rotate(-90deg);
@@ -22,8 +25,4 @@
     flex: 1 1 100%;
     display: flex;
   }
-}
-#menu,
-#menu:active {
-  @include textDecoration(9rem, bold);
 }

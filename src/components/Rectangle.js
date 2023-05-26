@@ -1,8 +1,9 @@
 import HeightStore from "../stores/HeightStore";
 
-import "../css/component/Rectangle.scss";
+import "../css/component/Shapes.scss";
 
-function printRect(height) {
+function printRect(height)
+{
   if (height >= 12) height = 12;
   if (height <= 0 || isNaN(height)) return;
 
@@ -20,8 +21,10 @@ function printRect(height) {
   return <div>{final}</div>;
 }
 
-export default function Rectangle() {
-  const store = HeightStore((s) => {
+export default function Rectangle()
+{
+  const store = HeightStore((s) =>
+  {
     return {
       rectHeight: s.rectHeight,
       setRectHeight: s.setRectHeight

@@ -1,8 +1,9 @@
 import HeightStore from "../stores/HeightStore";
 
-import "../css/component/Triangle.scss";
+import "../css/component/Shapes.scss";
 
-function printTriangle(height) {
+function printTriangle(height)
+{
   if (height >= 12) height = 12;
   if (height <= 0 || isNaN(height)) return;
 
@@ -18,8 +19,10 @@ function printTriangle(height) {
   return <div>{newText}</div>;
 }
 
-export default function Triangle() {
-  const store = HeightStore((s) => {
+export default function Triangle()
+{
+  const store = HeightStore((s) =>
+  {
     return {
       triHeight: s.triHeight,
       setTriHeight: s.setTriHeight,

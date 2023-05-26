@@ -2,21 +2,46 @@ $d_grey: rgba(48, 48, 48);
 $m_grey: rgba(74, 74, 74, 0.8);
 $l_grey: rgba(145, 145, 145);
 $vl_grey: rgba(245, 245, 245);
-$orange: rgba(255, 103, 38);
 $l_orange: rgba(255, 149, 117);
-
-$yellow: rgba(255, 197, 82);
-$l_yellow: rgba(252, 228, 179);
-
-$l_pink: rgba(255, 133, 241);
-$pink: rgba(237, 26, 153, 0.9);
-
-$red: rgba(252, 25, 25);
-$l_blue: rgba(50, 101, 201);
 $b_blue: rgba(161, 193, 255);
 
-$purp: rgba(121, 22, 250);
-$l_purp: rgba(173, 138, 255);
+
+@mixin linkDecoration($size, $weight) {
+  color: $m_grey;
+  font-size: $size;
+  font-weight: $weight;
+  text-decoration: none;
+  &:hover {
+    color: $d_grey;
+    text-decoration: none;
+  }  
+}  
+@mixin txtDecoration($size, $weight: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: inherit;
+}
+
+@mixin flex($direction: row, $justify: flex-start, $color: white, $wrap: nowrap, $align: normal) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  background-color: $color;
+  min-width: fit-content;
+}
+
+@mixin flexChild($flex, $direction: row, $justify: flex-start, $align: normal, $color: white ) {
+  flex: $flex;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  background-color: $color;
+  min-height: 100vh;
+}
+
 
 *,
 *::before,
@@ -24,64 +49,29 @@ $l_purp: rgba(173, 138, 255);
   padding: 0;
   margin: 0;
   box-sizing: inherit;
-}
+}  
 
 html {
   font-size: 62.5%;
-
+  
   @media (max-width: 45rem) {
     font-size: 40%;
-  }
-}
+  }  
+}  
 
 body {
   font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
-  box-sizing: border-box;
-}
-@mixin textDecoration($size, $weight) {
-  color: $m_grey;
-  font-size: $size;
-  font-weight: $weight;
-  &:hover {
-    color: $d_grey;
-  }
-}
+}  
+
 
 a,
 a:active {
-  text-decoration: none;
-  @include textDecoration(3rem, bold);
+  @include linkDecoration(3rem, bold);
+}  
 
-  &:hover {
-    text-decoration: none;
-  }
-}
 
-h1,
-h1:active {
-  font-size: 8rem;
-}
-@mixin flex($direction, $justify: "", $color: "", $wrap: "", $align: "") {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-  flex-direction: $direction;
-  background-color: $color;
-  min-width: fit-content;
-}
-
-@mixin flexChild($flex, $direction, $justify) {
-  flex: $flex;
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  min-height: 100vh;
-}
-
-@mixin flexContent($flex, $align: "", $color: "") {
-  flex: $flex;
-  align-items: $align;
-  background-color: $color;
-  min-height: 100vh;
+h2 {
+  color: $m_grey;
+  @include txtDecoration(3rem, bold);
 }

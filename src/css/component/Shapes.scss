@@ -1,5 +1,6 @@
 @import "../style.scss";
-.Rectangle {
+
+@mixin align {
   text-align: center;
   font-weight: bold;
   h2 {
@@ -8,6 +9,17 @@
   }
   .Pat {
     margin: 3rem;
-    color: $l_pink;
+    color: $b_blue;
   }
+}
+.Diamond {
+  @include align;
+}
+
+.Rectangle {
+  @include align;
+}
+
+.Triangle {
+  @include align;
 }
