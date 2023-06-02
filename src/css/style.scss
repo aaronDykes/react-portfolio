@@ -63,7 +63,7 @@ $b_blue: rgba(161, 193, 255);
 html {
   font-size: 62.5%;
 
-  @media (min-width: 95rem) {
+  @media (min-width: 100rem) {
     font-size: 85%;
   }
   @media (max-width: 45rem) {
