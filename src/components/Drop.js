@@ -5,13 +5,13 @@ export default function Nav({ vert }) {
   return (
     <div className={`drop-content-${vert ? "visible" : "hidden"}`}>
       <div className="page">
-        <Link to="/PageOne">one</Link>
+        <Link to="/one">one</Link>
       </div>
       <div className="page">
-        <Link to="/PageTwo">two</Link>
+        <Link to="/two">two</Link>
       </div>
       <div className="page">
-        <Link to="/PageThree">three</Link>
+        <Link to="/three">three</Link>
       </div>
     </div>
   );

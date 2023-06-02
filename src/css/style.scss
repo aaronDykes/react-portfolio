@@ -5,7 +5,6 @@ $vl_grey: rgba(245, 245, 245);
 $l_orange: rgba(255, 149, 117);
 $b_blue: rgba(161, 193, 255);
 
-
 @mixin linkDecoration($size, $weight) {
   color: $m_grey;
   font-size: $size;
@@ -14,25 +13,36 @@ $b_blue: rgba(161, 193, 255);
   &:hover {
     color: $d_grey;
     text-decoration: none;
-  }  
-}  
+  }
+}
 @mixin txtDecoration($size, $weight: normal) {
   font-size: $size;
   font-weight: $weight;
   font-family: inherit;
 }
 
-@mixin flex($direction: row, $justify: flex-start, $color: white, $wrap: nowrap, $align: normal) {
+@mixin flex(
+  $direction: row,
+  $justify: flex-start,
+  $color: white,
+  $wrap: nowrap,
+  $align: normal
+) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
   flex-wrap: $wrap;
   background-color: $color;
-  min-width: fit-content;
 }
 
-@mixin flexChild($flex, $direction: row, $justify: flex-start, $align: normal, $color: white ) {
+@mixin flexChild(
+  $flex,
+  $direction: row,
+  $justify: flex-start,
+  $align: normal,
+  $color: white
+) {
   flex: $flex;
   display: flex;
   flex-direction: $direction;
@@ -42,34 +52,34 @@ $b_blue: rgba(161, 193, 255);
   min-height: 100vh;
 }
 
-
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
-}  
+}
 
 html {
   font-size: 62.5%;
-  
+
+  @media (min-width: 95rem) {
+    font-size: 85%;
+  }
   @media (max-width: 45rem) {
-    font-size: 40%;
-  }  
-}  
+    font-size: 45%;
+  }
+}
 
 body {
   font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
-}  
-
+}
 
 a,
 a:active {
   @include linkDecoration(3rem, bold);
-}  
-
+}
 
 h2 {
   color: $m_grey;

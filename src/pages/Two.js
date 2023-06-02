@@ -3,8 +3,7 @@ import { BiAlignLeft } from "react-icons/bi";
 import { useState } from "react";
 
 import Nav from "../components/Nav";
-import Photos from "../components/Photos";
-import Images from "../assets/images/Index2";
+import Gal2 from "../assets/util/Gal2";
 
 export default function Page2() {
   const [clicked, setClicked] = useState(false);
@@ -19,7 +18,7 @@ export default function Page2() {
           <BiAlignLeft />
         </div>
         <div className="photos">
-          <Photos images={Images} />
+          <Gal2 />
         </div>
       </div>
     </div>

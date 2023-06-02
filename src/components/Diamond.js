@@ -1,8 +1,7 @@
 import HeightStore from "../stores/HeightStore";
 import "../css/component/Shapes.scss";
 
-function printDiamond(height)
-{
+function printDiamond(height) {
   if (height >= 12) height = 12;
   if (height <= 0 || isNaN(height)) return;
 
@@ -23,10 +22,8 @@ function printDiamond(height)
   const final = result.split("<br>").map((str) => <p>{str}</p>);
   return <div>{final}</div>;
 }
-export default function Diamond()
-{
-  const store = HeightStore((s) =>
-  {
+export default function Diamond() {
+  const store = HeightStore((s) => {
     return {
       diHeight: s.diHeight,
       setDiHeight: s.setDiHeight
